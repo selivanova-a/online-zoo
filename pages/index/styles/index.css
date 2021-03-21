@@ -80,6 +80,54 @@
   color: #00A092;
 }
 
+.promotion {
+  background: #ffffff;
+}
+
+.promotion-wrapper {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 1845px;
+  height: 831px;
+  background-image: url(../../../assets/images/panda-background.jpg);
+}
+
+.promotion-article {
+  font-family: Montserrat;
+}
+.promotion-article__title {
+  display: block;
+  font-weight: bold;
+  letter-spacing: 0.01em;
+  font-size: 82px;
+  color: #00A092;
+}
+.promotion-article__description {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  max-width: 430px;
+  font-size: 18px;
+  color: #000000;
+}
+.promotion-article__button {
+  all: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 26px 45px;
+  border-radius: 5px;
+  background: #F58021;
+  font-weight: 600;
+  font-size: 18px;
+  color: #ffffff;
+}
+.promotion-article__button:hover {
+  background: #D26004;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
 * {
   margin: 0;
   padding: 0;

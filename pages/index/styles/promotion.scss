@@ -1,0 +1,55 @@
+.promotion {
+  background: $main-background;
+}
+
+.promotion-wrapper {
+  display:flex;
+  align-items:center;
+
+  margin:0 auto;
+  width:1845px;
+  height:831px;
+  background-image: url(../../../assets/images/panda-background.jpg);
+}
+
+.promotion-article {
+  font-family: $main-font-family;
+
+  &__title {
+
+    display:block;
+    font-weight: bold;
+    letter-spacing: 0.01em;
+    font-size: 82px;
+    color: $main-title-font-color;
+  }
+
+  &__description {
+    margin-top:50px;
+    margin-bottom:50px;
+
+    max-width: 430px;
+    font-size: 18px;
+    color:$main-description-font-color;
+  }
+
+  &__button {
+    all: unset;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 26px 45px;
+    border-radius: 5px;
+    background:$button-color;
+
+    font-weight: 600;
+    font-size: 18px;
+    color:$button-inner-text-color;
+
+    &:hover {
+      background:$button-hover-color;
+      cursor:pointer;
+      transition-duration:0.5s;
+    }
+  }
+}
