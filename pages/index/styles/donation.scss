@@ -1,0 +1,120 @@
+@import "../../styles/wrappers";
+
+.donation {
+  height:221px;
+  background:$donation-background-color;
+
+  &__wrapper {
+    width: 1920px;
+    margin: 0 auto;
+    background:$donation-background-color;
+  }
+}
+
+.donation-amount {
+  height:221px;
+  display:flex;
+  align-self:center;
+  align-content:center;
+  align-items:center;
+  justify-content:space-between;
+  font-family:$main-font-family;
+
+  &__description {
+    color:$donation-inner-text;
+    h3 {
+      font-weight: 500;
+      font-size: 42px;
+      padding-bottom:20px;
+    }
+    p {
+      width:610px;
+      line-height: 150%;
+      font-weight: normal;
+      font-size: 18px;
+    }
+  }
+
+  &__form {
+    display:flex;
+  }
+
+  &__input {
+
+    span {
+      display:block;
+      color:$donation-inner-text;
+      font-weight: 500;
+      font-size: 26px;
+      padding-bottom:20px;
+    }
+
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+      -moz-appearance:textfield;
+    }
+
+    ::-webkit-input-placeholder {
+      color:$donation-inner-text;
+      text-align:center;
+      font-weight: 600;
+      font-size: 18px;}
+
+    ::-moz-placeholder          {
+      color:$donation-inner-text;
+      text-align:center;
+      font-weight: 600;
+      font-size: 18px;}/* Firefox 19+ */
+
+    :-moz-placeholder           {
+      color:$donation-inner-text;
+      text-align:center;
+      font-weight: 600;
+      font-size: 18px;}/* Firefox 18- */
+
+    :-ms-input-placeholder      {
+      color:$donation-inner-text;
+      text-align:center;
+      font-weight: 600;
+      font-size: 18px;}
+
+    input {
+      width: 246px;
+      height: 74px;
+      border: 1px solid #FFFFFF;
+      border-radius: 5px 0 0 5px;
+      background:$donation-background-color;
+      color:$donation-inner-text;
+    }
+
+    button {
+      all: unset;
+      color:$button-inner-text-color;
+      width:74px;
+      height:74px;
+      border: 1px solid #FFFFFF;
+      border-radius: 0 5px 5px 0;
+      background:$button-color;
+      font-size:40px;
+
+      &:hover {
+        background:$button-hover-color;
+        cursor:pointer;
+        transition-duration:0.5s;
+      }
+
+      i {
+        padding:20px;
+      }
+    }
+
+  }
+
+}

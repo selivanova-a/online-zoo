@@ -1,0 +1,28 @@
+@import "../../styles/constants";
+
+.buttons {
+  margin:0 auto;
+  display:flex;
+  justify-content:space-between;
+  width:185px;
+
+  button {
+    all:unset;
+    width:60px;
+    height:60px;
+    border: 1px solid $donation-background-color;
+    border-radius: 5px;
+
+    &:hover {
+      color: $button-inner-text-color;
+      background:$donation-background-color;
+      cursor:pointer;
+      transition-duration:0.5s;
+    }
+  }
+}
+
+
+
+
+

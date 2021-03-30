@@ -1,5 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.content-wrapper {
+  width: 1400px;
+  margin: 0 auto;
+}
+
 .header {
   height: 110px;
+  background: #F58021;
+}
+
+.header__wrapper {
+  width: 1920px;
+  margin: 0 auto;
   background: #F58021;
 }
 
@@ -84,7 +105,7 @@
   background: #ffffff;
 }
 
-.promotion-wrapper {
+.promotion__wrapper {
   display: flex;
   align-items: center;
   margin: 0 auto;
@@ -115,12 +136,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 26px 45px;
+  padding: 26px 40px;
   border-radius: 5px;
   background: #F58021;
   font-weight: 600;
   font-size: 18px;
   color: #ffffff;
+}
+.promotion-article__button i {
+  padding-left: 10px;
 }
 .promotion-article__button:hover {
   background: #D26004;
@@ -138,11 +162,227 @@ html, body {
   width: 100%;
 }
 
-.wrapper {
-  height: 110px;
+.content-wrapper {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+.welcome__wrapper {
   width: 1920px;
   margin: 0 auto;
+}
+
+.welcome-zoo {
+  margin-top: 150px;
+  margin-bottom: 150px;
+  display: flex;
+  justify-content: space-between;
+  font-family: Montserrat;
+}
+.welcome-zoo__description {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+.welcome-zoo__description span {
+  color: #00A092;
+  font-weight: 600;
+  font-size: 54px;
+}
+.welcome-zoo__description h1 {
+  color: #00A092;
+  font-weight: 600;
+  font-size: 54px;
+}
+.welcome-zoo__description p {
+  margin-top: 50px;
+  width: 560px;
+  color: #000000;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.content-wrapper {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+.donation {
+  height: 221px;
+  background: #20113D;
+}
+.donation__wrapper {
+  width: 1920px;
+  margin: 0 auto;
+  background: #20113D;
+}
+
+.donation-amount {
+  height: 221px;
+  display: flex;
+  align-self: center;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Montserrat;
+}
+.donation-amount__description {
+  color: #ffffff;
+}
+.donation-amount__description h3 {
+  font-weight: 500;
+  font-size: 42px;
+  padding-bottom: 20px;
+}
+.donation-amount__description p {
+  width: 610px;
+  line-height: 150%;
+  font-weight: normal;
+  font-size: 18px;
+}
+.donation-amount__form {
+  display: flex;
+}
+.donation-amount__input {
+  /* Chrome, Safari, Edge, Opera */
+  /* Firefox */
+  /* Firefox 19+ */
+  /* Firefox 18- */
+}
+.donation-amount__input span {
+  display: block;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 26px;
+  padding-bottom: 20px;
+}
+.donation-amount__input input::-webkit-outer-spin-button,
+.donation-amount__input input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.donation-amount__input input[type=number] {
+  -moz-appearance: textfield;
+}
+.donation-amount__input ::-webkit-input-placeholder {
+  color: #ffffff;
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+}
+.donation-amount__input ::-moz-placeholder {
+  color: #ffffff;
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+}
+.donation-amount__input :-moz-placeholder {
+  color: #ffffff;
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+}
+.donation-amount__input :-ms-input-placeholder {
+  color: #ffffff;
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+}
+.donation-amount__input input {
+  width: 246px;
+  height: 74px;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px 0 0 5px;
+  background: #20113D;
+  color: #ffffff;
+}
+.donation-amount__input button {
+  all: unset;
+  color: #ffffff;
+  width: 74px;
+  height: 74px;
+  border: 1px solid #FFFFFF;
+  border-radius: 0 5px 5px 0;
   background: #F58021;
+  font-size: 40px;
+}
+.donation-amount__input button:hover {
+  background: #D26004;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+.donation-amount__input button i {
+  padding: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.content-wrapper {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+.our-pets {
+  padding-top: 136px;
+  text-align: center;
+  width: 1920px;
+  margin: 0 auto;
+  font-family: Montserrat;
+}
+.our-pets__description {
+  margin: 0 auto;
+}
+.our-pets h2 {
+  padding-bottom: 50px;
+  color: #00A092;
+  font-weight: 600;
+  font-size: 54px;
+}
+.our-pets p {
+  padding-bottom: 100px;
+  margin: 0 auto;
+  width: 920px;
+  font-size: 26px;
+  text-align: center;
+}
+
+.buttons {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 185px;
+}
+.buttons button {
+  all: unset;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #20113D;
+  border-radius: 5px;
+}
+.buttons button:hover {
+  color: #ffffff;
+  background: #20113D;
+  cursor: pointer;
+  transition-duration: 0.5s;
 }
 
 /*# sourceMappingURL=index.css.map */

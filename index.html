@@ -11,7 +11,7 @@
 </head>
 <body>
 	<header class="header">
-		<div class="wrapper">
+		<div class="header__wrapper">
 			<div class="content-wrapper">
 				<div class="header-content">
 					<div class="logo">
@@ -54,22 +54,103 @@
 		</div>
 	</header>
 	<div class="promotion">
-			<div class="promotion-wrapper">
-				<div class="content-wrapper">
-					<div class="promotion-article">
-						<span class="promotion-article__title">WATCH YOUR </span>
-						<span class="promotion-article__title">FAVORITE ANIMAL</span>
-						<span class="promotion-article__title">ONLINE</span>
-						<p class="promotion-article__description">
-							Explore the exciting and mysterious world of wild animals in a natural setting without leaving your home.
-						</p>
-						<button class="promotion-article__button">
-							VIEW LIVE CAM
-							<i class="fas fa-arrow-right"></i>
-						</button>
+		<div class="promotion__wrapper">
+			<div class="content-wrapper">
+				<div class="promotion-article">
+					<span class="promotion-article__title">WATCH YOUR </span>
+					<span class="promotion-article__title">FAVORITE ANIMAL</span>
+					<span class="promotion-article__title">ONLINE</span>
+					<p class="promotion-article__description">
+						Explore the exciting and mysterious world of wild animals in a natural setting without leaving
+						your home.
+					</p>
+					<button class="promotion-article__button" onclick="window.location.href = '#';">
+						VIEW LIVE CAM
+						<i class="fas fa-arrow-right"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div class="welcome">
+		<div class="welcome__wrapper">
+			<div class="content-wrapper">
+				<div class="welcome-zoo">
+					<div class="welcome-zoo__description">
+						<span>WELCOME TO THE</span>
+						<h1>ONLINE ZOO</h1>
+						<p>On our website, using live webcams, fans of all ages can observe various animals.
+							Among them, are Giant pandas, eagles, alligators, forest gorillas, African lions, and others.
+							It is the whole natural world in real-time in front of our cameras. We hope you will enjoy
+							watching closely and explore animals’ behavior and habitats! Note: animals are not always on
+							view on cameras, so please check back if you don't see anything.</p>
+					</div>
+					<div class="welcome-zoo__image">
+						<img src="assets/images/welcome.jpg" alt="welcome photo">
+					</div>
+				</div>
+				<div class="welcome-zoo">
+					<div class="welcome-zoo__image">
+						<img src="assets/images/eagles.jpg" alt="welcome photo">
+					</div>
+					<div class="welcome-zoo__description">
+						<span>HOW WE WORK</span>
+						<p>Online Zoo is a nonprofit committed to inspiring awareness and preservation of nature and wild
+							animals in our zoo and worldwide. Every day, our experts work to safeguard the health and
+							wellness of the animals. To continue these efforts, we need your help. We're so grateful to
+							our numerous supporters. All donations, large and small, go a long way to the conservation
+							efforts of our pets.</p>
 					</div>
 				</div>
 			</div>
+		</div>
+	</div>
+	<div class="donation">
+		<div class="donation__wrapper">
+			<div class="content-wrapper">
+				<div class="donation-amount">
+					<div class="donation-amount__description">
+						<h3>YOUR DONATION MAKES A DIFFERENCE!</h3>
+						<p>The Online Zoo's animal webcams are some of the most famous on the internet.
+							Tune in to watch your favourite animals — live, 24/7!</p>
+					</div>
+					<div class="donation-amount__input">
+						<span>Quick Donate</span>
+						<div class="donation-amount__form">
+							<input type="number" step="1" min="1" max="9999" id="num_count" placeholder="$ DONATION AMOUNT"
+								   class="input-text qty text" size="4" />
+							<button>
+								<i class="fas fa-arrow-right"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="our-pets">
+		<div class="our-pets__description">
+			<h2>MEET SOME OUR PETS</h2>
+			<p>Do you have a special place in your heart for animals? Who are your favorites?
+				Perhaps you'd like to donate to special ones or all our pets? We think it's important
+				for you to choose how your donation is used. </p>
+			<div class="slider">
+				<div class="buttons">
+					<button class="slider__button slider__button_left"><i class="fas fa-arrow-left"></i></button>
+					<button class="slider__button slider__button_right"><i class="fas fa-arrow-right"></i></button>
+				</div>
+					<div class="slider__slides">
+						<div class="slider__item">
+
+						</div>
+						<div class="slider__item">
+
+						</div>
+					</div>
+			</div>
+
+		</div>
 	</div>
 </body>
 </html>

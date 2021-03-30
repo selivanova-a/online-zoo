@@ -1,0 +1,44 @@
+@import "../../styles/wrappers";
+
+.welcome__wrapper {
+  width:1920px;
+  margin:0 auto;
+}
+
+.welcome-zoo {
+  margin-top:150px;
+  margin-bottom:150px;
+
+  display:flex;
+  justify-content:space-between;
+
+  font-family:$main-font-family;
+
+  &__description {
+    display:flex;
+    flex-direction:column;
+    align-self:center;
+
+    span {
+      color: $main-title-font-color;
+      font-weight: 600;
+      font-size: 54px;
+    }
+
+    h1 {
+      color: $main-title-font-color;
+      font-weight: 600;
+      font-size: 54px;
+    }
+
+    p {
+      margin-top:50px;
+      width:560px;
+      color: $main-description-font-color;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 150%;
+    }
+  }
+}
+

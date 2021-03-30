@@ -1,19 +1,12 @@
+@import "../../styles/constants";
+@import "../../styles/wrappers";
+
 @import "../../styles/header";
 @import "promotion";
+@import "welcome";
+@import "donation";
+@import "our-pets";
+@import "slider";
 
-* {
-  margin:0;
-  padding:0;
-}
 
-html, body {
-  height: 100%;
-  width: 100%;
-}
 
-.wrapper {
-  height:110px;
-  width: 1920px;
-  margin: 0 auto;
-  background:#F58021;;
-}

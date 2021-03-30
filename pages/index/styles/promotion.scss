@@ -2,7 +2,7 @@
   background: $main-background;
 }
 
-.promotion-wrapper {
+.promotion__wrapper {
   display:flex;
   align-items:center;
 
@@ -16,7 +16,6 @@
   font-family: $main-font-family;
 
   &__title {
-
     display:block;
     font-weight: bold;
     letter-spacing: 0.01em;
@@ -38,13 +37,17 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    padding: 26px 45px;
+    padding: 26px 40px;
     border-radius: 5px;
     background:$button-color;
 
     font-weight: 600;
     font-size: 18px;
     color:$button-inner-text-color;
+
+    i {
+      padding-left:10px;
+    }
 
     &:hover {
       background:$button-hover-color;

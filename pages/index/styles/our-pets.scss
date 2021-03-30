@@ -1,0 +1,30 @@
+@import "../../styles/constants";
+@import "../../styles/wrappers";
+
+.our-pets {
+  padding-top:136px;
+  text-align:center;
+  width:1920px;
+  margin:0 auto;
+  font-family:$main-font-family;
+
+  &__description {
+    margin:0 auto;
+  }
+
+  h2 {
+    padding-bottom:50px;
+    color: $main-title-font-color;
+    font-weight: 600;
+    font-size: 54px;
+  }
+
+  p {
+    padding-bottom:100px;
+    margin:0 auto;
+    width: 920px;
+    font-size: 26px;
+    text-align:center;
+  }
+}
+
