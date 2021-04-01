@@ -133,12 +133,11 @@ html, body {
 }
 .promotion-article__button {
   all: unset;
-  display: flex;
   justify-content: center;
   align-items: center;
-  padding: 26px 40px;
   border-radius: 5px;
   background: #F58021;
+  padding: 26px 40px;
   font-weight: 600;
   font-size: 18px;
   color: #ffffff;
@@ -351,13 +350,13 @@ html, body {
 .our-pets__description {
   margin: 0 auto;
 }
-.our-pets h2 {
+.our-pets__title {
   padding-bottom: 50px;
   color: #00A092;
   font-weight: 600;
   font-size: 54px;
 }
-.our-pets p {
+.our-pets__text {
   padding-bottom: 100px;
   margin: 0 auto;
   width: 920px;
@@ -365,7 +364,38 @@ html, body {
   text-align: center;
 }
 
+.choose-button {
+  all: unset;
+  border: 1px solid #20113D;
+  border-radius: 5px;
+  margin-top: 100px;
+  margin-bottom: 150px;
+  width: 359px;
+  height: 74px;
+  font-weight: 600;
+  font-size: 18px;
+}
+.choose-button i {
+  padding-left: 10px;
+}
+.choose-button:hover {
+  color: #ffffff;
+  background: #20113D;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.slider-wrapper {
+  width: 1920px;
+  margin: 0 auto;
+}
+
+.slider__slides {
+  overflow: hidden;
+}
+
 .buttons {
+  padding-bottom: 50px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -373,16 +403,185 @@ html, body {
 }
 .buttons button {
   all: unset;
-  width: 60px;
-  height: 60px;
   border: 1px solid #20113D;
   border-radius: 5px;
+  width: 60px;
+  height: 60px;
 }
 .buttons button:hover {
   color: #ffffff;
   background: #20113D;
   cursor: pointer;
   transition-duration: 0.5s;
+}
+
+.slider__item {
+  padding: 25px;
+  display: flex;
+  width: 100%;
+  margin-left: 250px;
+}
+
+.slider-image {
+  margin-right: 40px;
+  display: block;
+  width: 440px;
+  height: 747px;
+  background: #20113D;
+  background-repeat: no-repeat;
+  font-family: Montserrat;
+  color: #ffffff;
+  text-decoration: none;
+}
+.slider-image__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 134px;
+  height: 60px;
+  background: #20113D;
+  font-weight: 500;
+  font-size: 26px;
+}
+.slider-image__description {
+  margin-top: 400px;
+}
+.slider-image__description-title {
+  padding-bottom: 30px;
+  font-weight: 500;
+  font-size: 26px;
+}
+.slider-image__description-text {
+  padding-bottom: 65px;
+  max-width: 350px;
+  font-weight: normal;
+  font-size: 18px;
+  margin: 0 auto;
+}
+.slider-image__description-button {
+  color: #F58021;
+  font-weight: 600;
+  font-size: 18px;
+}
+.slider-image:hover {
+  transform: scale(1.05);
+  transition-duration: 0.5s;
+}
+
+.panda {
+  background-image: url(../../../assets/images/panda-lucas.jpg);
+}
+
+.lemur {
+  background-image: url(../../../assets/images/lemur-andy.jpg);
+}
+
+.gorilla {
+  background-image: url(../../../assets/images/glen-gorilla.jpg);
+}
+
+.alligator {
+  background-image: url(../../../assets/images/mike-alligator.jpg);
+}
+
+.eagles {
+  background-image: url(../../../assets/images/sam-lora-eagles.jpg);
+}
+
+.koala {
+  background-image: url(../../../assets/images/liz-koala.jpg);
+}
+
+.lion {
+  background-image: url(../../../assets/images/shake-lion.jpg);
+}
+
+.tiger {
+  background-image: url(../../../assets/images/senja-tiger.jpg);
+}
+
+.pay-feed {
+  width: 100%;
+  background: #20113D;
+}
+.pay-feed__wrapper {
+  width: 1920px;
+  margin: 0 auto;
+  background: #20113D;
+}
+
+.pay-feed__title {
+  padding-top: 91px;
+  font-family: Montserrat;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 54px;
+}
+
+.pay-feed__decoration-line {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Montserrat;
+  color: #ffffff;
+}
+.pay-feed__decoration-line .number-line {
+  padding-right: 93px;
+  font-weight: 500;
+  font-size: 26px;
+}
+.pay-feed__decoration-line .decoration-line {
+  width: 1280px;
+  height: 1px;
+  background: #ffffff;
+}
+
+.donation-info {
+  display: flex;
+}
+.donation-info__image {
+  padding-right: 160px;
+}
+.donation-info__image img {
+  border-radius: 7px;
+}
+.donation-info__button {
+  all: unset;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: #F58021;
+  padding: 26px 45px;
+  font-weight: 600;
+  font-size: 18px;
+}
+.donation-info__button i {
+  padding-left: 10px;
+}
+.donation-info__button:hover {
+  background: #D26004;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.donation-info__description {
+  font-family: Montserrat;
+  color: #ffffff;
+}
+.donation-info__description-title {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  font-weight: 500;
+  font-size: 26px;
+}
+.donation-info__description-text {
+  padding-bottom: 50px;
+  font-weight: normal;
+  font-size: 18px;
+  max-width: 560px;
+  line-height: 150%;
 }
 
 /*# sourceMappingURL=index.css.map */

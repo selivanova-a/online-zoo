@@ -1,0 +1,26 @@
+@mixin donation-button {
+  all: unset;
+  border: 1px solid $donation-background-color;
+  border-radius: 5px;
+}
+
+@mixin donation-button-hover {
+  color: $button-inner-text-color;
+  background:$donation-background-color;
+  cursor:pointer;
+  transition-duration:0.5s;
+}
+
+@mixin basic-button {
+  all: unset;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background:$button-color;
+}
+
+@mixin basic-button-hover {
+  background:$button-hover-color;
+  cursor:pointer;
+  transition-duration:0.5s;
+}

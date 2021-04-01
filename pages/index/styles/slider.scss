@@ -1,28 +1,119 @@
 @import "../../styles/constants";
+@import "../../styles/mixins";
+
+.slider-wrapper {
+  width: 1920px;
+  margin: 0 auto;
+}
+
+.slider__slides {
+  overflow:hidden;
+}
+
 
 .buttons {
+  padding-bottom:50px;
   margin:0 auto;
   display:flex;
   justify-content:space-between;
   width:185px;
 
   button {
-    all:unset;
+    @include donation-button();
     width:60px;
     height:60px;
-    border: 1px solid $donation-background-color;
-    border-radius: 5px;
 
     &:hover {
-      color: $button-inner-text-color;
-      background:$donation-background-color;
-      cursor:pointer;
-      transition-duration:0.5s;
+      @include donation-button-hover();
     }
   }
 }
 
+.slider__item {
+  padding:25px;
+  display: flex;
+  width:100%;
+  margin-left:250px;
 
+}
+
+.slider-image {
+  margin-right:40px;
+  display: block;
+  width: 440px;
+  height: 747px;
+  background:$donation-background-color;
+  background-repeat:no-repeat;
+
+  font-family:$main-font-family;
+  color: $donation-inner-text;
+  text-decoration:none;
+
+  &__title {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width: 134px;
+    height: 60px;
+    background:$donation-background-color;
+    font-weight: 500;
+    font-size: 26px;
+  }
+
+  &__description {
+    margin-top:400px;
+
+    &-title {
+      padding-bottom:30px;
+      font-weight: 500;
+      font-size: 26px;
+    }
+
+    &-text {
+      padding-bottom:65px;
+      max-width:350px;
+      font-weight: normal;
+      font-size: 18px;
+      margin:0 auto;
+    }
+
+    &-button {
+      color: $button-color;
+      font-weight: 600;
+      font-size: 18px;
+    }
+  }
+
+  &:hover {
+    transform: scale(1.05);
+    transition-duration:0.5s;
+  }
+}
+
+.panda {
+  background-image: url(../../../assets/images/panda-lucas.jpg);
+}
+.lemur {
+  background-image: url(../../../assets/images/lemur-andy.jpg);
+}
+.gorilla {
+  background-image: url(../../../assets/images/glen-gorilla.jpg);
+}
+.alligator {
+  background-image: url(../../../assets/images/mike-alligator.jpg);
+}
+.eagles {
+  background-image: url(../../../assets/images/sam-lora-eagles.jpg);
+}
+.koala {
+  background-image: url(../../../assets/images/liz-koala.jpg);
+}
+.lion {
+  background-image: url(../../../assets/images/shake-lion.jpg);
+}
+.tiger {
+  background-image: url(../../../assets/images/senja-tiger.jpg);
+}
 
 
 
