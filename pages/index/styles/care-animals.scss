@@ -1,0 +1,121 @@
+.care-animals {
+  margin-top:136px;
+  font-family:$main-font-family;
+
+  &__title {
+    padding-bottom: 50px;
+    margin:0 auto;
+    max-width:655px;
+    text-align:center;
+    font-weight: 600;
+    font-size: 54px;
+    color: $main-title-font-color;
+  }
+
+  &__description {
+    padding-bottom:100px;
+    margin:0 auto;
+    max-width: 537px;
+    text-align:center;
+    font-weight: 500;
+    font-size: 26px;
+    color: $donation-background-color;
+  }
+}
+
+.feed-animals {
+  margin-top: 40px;
+  display:flex;
+
+  &__image {
+    margin-right: 40px;
+  }
+
+  &__item {
+    margin-right:40px;
+    overflow:hidden;
+    text-decoration:none;
+    display:block;
+    width: 440px;
+    height: 658px;
+    background:$donation-background-color;
+    background-repeat:no-repeat;
+
+    &:hover {
+      transform: scale(1.05);
+      transition-duration:0.5s;
+    }
+  }
+
+
+  &__text {
+    padding-bottom:100px;
+    padding-top:400px;
+    margin:0 auto;
+    max-width:350px;
+    text-align:center;
+    font-weight: normal;
+    color: $donation-inner-text;
+    font-size: 18px;
+    line-height: 150%;
+  }
+
+  &__button {
+    display:flex;
+    justify-content:center;
+    all: unset;
+    font-weight: 600;
+    font-size: 18px;
+    color:$button-color;
+
+    i {
+      padding-left:10px;
+    }
+  }
+
+  .feed-animals__button {
+    margin-left:170px;
+  }
+
+}
+
+.feed-panda {
+  background-image: url(../../../assets/images/care-panda.jpg);
+}
+
+.feed-tiger {
+  background-image: url(../../../assets/images/care-tiger.jpg);
+}
+
+.feed-lemur {
+  background-image: url(../../../assets/images/care-lemur.jpg);
+}
+
+.feed-eagles {
+  background-image: url(../../../assets/images/care-eagles.jpg);
+}
+
+.feed-button {
+  @include donation-button();
+  padding: 26px 45px;
+
+  i {
+    padding-left:10px;
+  }
+
+  &:hover {
+    @include donation-button-hover();
+  }
+
+}
+
+.button {
+  padding-top:100px;
+  width: 359px;
+  margin:0 auto;
+}
+
+.touch-the-animal-image {
+  margin-top:150px;
+  margin-bottom:150px;
+}

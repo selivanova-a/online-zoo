@@ -1,0 +1,129 @@
+.feedback {
+  width:100%;
+  background:$donation-background-color;
+
+  &__wrapper {
+    padding-top:100px;
+    width: 1920px;
+    margin: 0 auto;
+    background:$donation-background-color;
+  }
+
+  .feedback-gradient__wrapper {
+    width:1920px;
+    height:1770px;
+    background-image: url(../../../assets/images/gradient-background.jpg);
+    background-repeat:no-repeat;
+  }
+}
+
+.feedback__2-row-wrapper {
+  display: flex;
+}
+
+.feedback-description {
+  padding-left:260px;
+  padding-top:100px;
+  font-family:$main-font-family;
+  color: $donation-inner-text;
+
+  &__title {
+    display:block;
+    font-weight: 600;
+    font-size: 54px;
+  }
+
+  &__text {
+    padding-top:50px;
+    max-width: 560px;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 130%;
+  }
+}
+
+.feedback-slider {
+  padding-top:100px;
+  padding-left:30px;
+}
+
+.feedback-slider__slides {
+  //display:flex;
+  width:100%;
+  overflow:hidden;
+}
+
+.feedback-slider__item {
+  margin-bottom:30px;
+  display: flex;
+  width:100%;
+  font-family:$main-font-family;
+  color: $main-description-font-color;
+
+  .slider-feedback-wrapper {
+    padding:50px;
+  }
+
+  .slider-feedback {
+    margin-left:50px;
+    width: 515px;
+    height: 463px;
+    background:$main-background;
+
+    &__title {
+      padding-top: 60px;
+      padding-bottom: 20px;
+      font-weight: 500;
+      font-size: 26px;
+      line-height: 130%;
+    }
+
+    &__text {
+      font-weight: normal;
+      font-size: 18px;
+    }
+
+    &__author {
+      padding-top:50px;
+      font-weight: 600;
+      font-size: 18px;
+    }
+  }
+}
+
+.feedback-slider__buttons {
+  display:flex;
+  justify-content:space-between;
+  width:185px;
+
+  .feedback-slider__button {
+    @include feedback-button();
+    width:60px;
+    height:60px;
+
+    i {
+      padding: 0 24px;
+    }
+
+    &:hover {
+        @include feedback-button-hover();
+      }
+  }
+}
+
+.leave-button {
+  @include feedback-button();
+  margin-top:400px;
+  font-family:$main-font-family;
+  padding: 26px 45px;
+  margin-left:260px;
+
+  i {
+    padding-left:10px;
+  }
+
+  &:hover {
+    @include feedback-button-hover();
+  }
+}
+

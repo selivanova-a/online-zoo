@@ -391,6 +391,7 @@ html, body {
 }
 
 .slider__slides {
+  width: 100%;
   overflow: hidden;
 }
 
@@ -582,6 +583,247 @@ html, body {
   font-size: 18px;
   max-width: 560px;
   line-height: 150%;
+}
+
+.feedback {
+  width: 100%;
+  background: #20113D;
+}
+.feedback__wrapper {
+  padding-top: 100px;
+  width: 1920px;
+  margin: 0 auto;
+  background: #20113D;
+}
+.feedback .feedback-gradient__wrapper {
+  width: 1920px;
+  height: 1770px;
+  background-image: url(../../../assets/images/gradient-background.jpg);
+  background-repeat: no-repeat;
+}
+
+.feedback__2-row-wrapper {
+  display: flex;
+}
+
+.feedback-description {
+  padding-left: 260px;
+  padding-top: 100px;
+  font-family: Montserrat;
+  color: #ffffff;
+}
+.feedback-description__title {
+  display: block;
+  font-weight: 600;
+  font-size: 54px;
+}
+.feedback-description__text {
+  padding-top: 50px;
+  max-width: 560px;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 130%;
+}
+
+.feedback-slider {
+  padding-top: 100px;
+  padding-left: 30px;
+}
+
+.feedback-slider__slides {
+  width: 100%;
+  overflow: hidden;
+}
+
+.feedback-slider__item {
+  margin-bottom: 30px;
+  display: flex;
+  width: 100%;
+  font-family: Montserrat;
+  color: #000000;
+}
+.feedback-slider__item .slider-feedback-wrapper {
+  padding: 50px;
+}
+.feedback-slider__item .slider-feedback {
+  margin-left: 50px;
+  width: 515px;
+  height: 463px;
+  background: #ffffff;
+}
+.feedback-slider__item .slider-feedback__title {
+  padding-top: 60px;
+  padding-bottom: 20px;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 130%;
+}
+.feedback-slider__item .slider-feedback__text {
+  font-weight: normal;
+  font-size: 18px;
+}
+.feedback-slider__item .slider-feedback__author {
+  padding-top: 50px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.feedback-slider__buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 185px;
+}
+.feedback-slider__buttons .feedback-slider__button {
+  font-family: Montserrat;
+  all: unset;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  border-radius: 5px;
+  width: 60px;
+  height: 60px;
+}
+.feedback-slider__buttons .feedback-slider__button i {
+  padding: 0 24px;
+}
+.feedback-slider__buttons .feedback-slider__button:hover {
+  cursor: pointer;
+  background: #ffffff;
+  color: #20113D;
+  transition-duration: 0.5s;
+}
+
+.leave-button {
+  font-family: Montserrat;
+  all: unset;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  border-radius: 5px;
+  margin-top: 400px;
+  font-family: Montserrat;
+  padding: 26px 45px;
+  margin-left: 260px;
+}
+.leave-button i {
+  padding-left: 10px;
+}
+.leave-button:hover {
+  cursor: pointer;
+  background: #ffffff;
+  color: #20113D;
+  transition-duration: 0.5s;
+}
+
+.care-animals {
+  margin-top: 136px;
+  font-family: Montserrat;
+}
+.care-animals__title {
+  padding-bottom: 50px;
+  margin: 0 auto;
+  max-width: 655px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 54px;
+  color: #00A092;
+}
+.care-animals__description {
+  padding-bottom: 100px;
+  margin: 0 auto;
+  max-width: 537px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 26px;
+  color: #20113D;
+}
+
+.feed-animals {
+  margin-top: 40px;
+  display: flex;
+}
+.feed-animals__image {
+  margin-right: 40px;
+}
+.feed-animals__item {
+  margin-right: 40px;
+  overflow: hidden;
+  text-decoration: none;
+  display: block;
+  width: 440px;
+  height: 658px;
+  background: #20113D;
+  background-repeat: no-repeat;
+}
+.feed-animals__item:hover {
+  transform: scale(1.05);
+  transition-duration: 0.5s;
+}
+.feed-animals__text {
+  padding-bottom: 100px;
+  padding-top: 400px;
+  margin: 0 auto;
+  max-width: 350px;
+  text-align: center;
+  font-weight: normal;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 150%;
+}
+.feed-animals__button {
+  display: flex;
+  justify-content: center;
+  all: unset;
+  font-weight: 600;
+  font-size: 18px;
+  color: #F58021;
+}
+.feed-animals__button i {
+  padding-left: 10px;
+}
+.feed-animals .feed-animals__button {
+  margin-left: 170px;
+}
+
+.feed-panda {
+  background-image: url(../../../assets/images/care-panda.jpg);
+}
+
+.feed-tiger {
+  background-image: url(../../../assets/images/care-tiger.jpg);
+}
+
+.feed-lemur {
+  background-image: url(../../../assets/images/care-lemur.jpg);
+}
+
+.feed-eagles {
+  background-image: url(../../../assets/images/care-eagles.jpg);
+}
+
+.feed-button {
+  all: unset;
+  border: 1px solid #20113D;
+  border-radius: 5px;
+  padding: 26px 45px;
+}
+.feed-button i {
+  padding-left: 10px;
+}
+.feed-button:hover {
+  color: #ffffff;
+  background: #20113D;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.button {
+  padding-top: 100px;
+  width: 359px;
+  margin: 0 auto;
+}
+
+.touch-the-animal-image {
+  margin-top: 150px;
+  margin-bottom: 150px;
 }
 
 /*# sourceMappingURL=index.css.map */

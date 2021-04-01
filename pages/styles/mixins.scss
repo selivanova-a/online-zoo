@@ -24,3 +24,18 @@
   cursor:pointer;
   transition-duration:0.5s;
 }
+
+@mixin feedback-button {
+  font-family:$main-font-family;
+  all: unset;
+  border: 1px solid $donation-inner-text;
+  color: $donation-inner-text;
+  border-radius: 5px;
+}
+
+@mixin feedback-button-hover {
+  cursor:pointer;
+  background:$main-background;
+  color:$donation-background-color;
+  transition-duration:0.5s;
+}
