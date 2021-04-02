@@ -31,7 +31,7 @@
   display:flex;
 
   &__img {
-    padding-left: 240px;
+    padding-left: 200px;
   }
 }
 
@@ -50,6 +50,18 @@
     font-weight: normal;
     font-size: 18px;
   }
+
+  .donation-link {
+    padding-left:60px;
+    text-decoration:none;
+    color: $button-color;
+    font-weight: 600;
+
+    &:hover {
+      color:$button-hover-color;
+    }
+  }
+
 }
 
 .animal-text {
