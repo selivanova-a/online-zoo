@@ -1,6 +1,13 @@
+@import "../../styles/wrappers";
+
 .care-animals {
   margin-top:136px;
   font-family:$main-font-family;
+
+  &__wrapper {
+    margin: 0 auto;
+    width: 1920px;
+  }
 
   &__title {
     padding-bottom: 50px;

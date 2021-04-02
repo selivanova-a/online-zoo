@@ -713,9 +713,28 @@ html, body {
   transition-duration: 0.5s;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.content-wrapper {
+  width: 1400px;
+  margin: 0 auto;
+}
+
 .care-animals {
   margin-top: 136px;
   font-family: Montserrat;
+}
+.care-animals__wrapper {
+  margin: 0 auto;
+  width: 1920px;
 }
 .care-animals__title {
   padding-bottom: 50px;
