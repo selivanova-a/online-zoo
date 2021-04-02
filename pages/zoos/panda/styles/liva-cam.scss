@@ -1,0 +1,43 @@
+.live-cam {
+  font-family: $main-font-family;
+   width:1920px;
+   margin: 0 auto;
+
+  &__title {
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding-top:50px;
+    padding-bottom:50px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $main-title-font-color;
+    font-weight: 600;
+    font-size: 54px;
+  }
+
+  &__button {
+    @include basic-button();
+    text-decoration:none;
+    margin-left:200px;
+    padding: 26px 40px;
+
+    font-weight: 600;
+    font-size: 18px;
+    color:$button-inner-text-color;
+
+    i {
+      padding-left:10px;
+    }
+
+    &:hover {
+      @include basic-button-hover();
+    }
+  }
+
+  .span {
+    width:400px;
+  }
+}

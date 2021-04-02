@@ -1,0 +1,94 @@
+.sidebar {
+  width: 220px;
+  height: 846px;
+  background: $donation-background-color;
+  position:sticky;
+  top: 0px;
+  float:left;
+
+  .live-button {
+    text-transform: uppercase;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width: 120px;
+    height: 38px;
+    background: $button-color;
+    color:$donation-inner-text;
+    font-family:$main-font-family;
+
+    &__img {
+      padding-left:10px;
+    }
+  }
+
+  .more-button {
+    padding-left:170px;
+    padding-bottom:35px;
+  }
+
+  &-decoration-line {
+    width: 220px;
+    height: 1px;
+    background:$main-background;
+  }
+}
+
+.sidebar-animal__active {
+  padding-top:25px;
+  padding-bottom:25px;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  .border-circle {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    width: 120px;
+    height: 120px;
+    border-radius:50%;
+    border: 3px solid $main-background;
+    box-sizing: border-box;
+  }
+
+  .circle {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    width: 104px;
+    height: 104px;
+    border-radius:50%;
+    background: $main-background;
+  }
+}
+
+.sidebar-animal {
+  padding-top:35px;
+  padding-bottom:35px;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  .circle {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    width: 104px;
+    height: 104px;
+    border-radius:50%;
+    background: $button-color;
+  }
+}
+
+.arrow-down {
+  padding-top:20px;
+  color: $main-background;
+  text-align:center;
+}
+
