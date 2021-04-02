@@ -14,7 +14,6 @@ html, body {
 }
 
 .header {
-  height: 110px;
   background: #F58021;
 }
 
@@ -843,6 +842,122 @@ html, body {
 .touch-the-animal-image {
   margin-top: 150px;
   margin-bottom: 150px;
+}
+
+.footer {
+  width: 100%;
+  height: 330px;
+  background: #20113D;
+}
+.footer__wrapper {
+  margin: 0 auto;
+  width: 1920px;
+  background: #20113D;
+}
+
+.footer-navigation {
+  display: flex;
+  align-items: center;
+  height: 210px;
+}
+
+.footer-navigation__icons {
+  display: flex;
+}
+.footer-navigation__icons .footer-navigation__icon {
+  padding-right: 65px;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+.footer-links__item {
+  padding-left: 23px;
+  padding-right: 23px;
+  list-style: none;
+  font-weight: 600;
+  font-size: 18px;
+}
+.footer-links__item a {
+  font-family: Montserrat;
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer-links__item a:hover {
+  color: #00A092;
+  transition-duration: 0.5s;
+}
+
+.footer-button-wrapper {
+  padding-left: 70px;
+}
+.footer-button-wrapper .footer-button {
+  font-family: Montserrat;
+  all: unset;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 26px 45px;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 18px;
+}
+.footer-button-wrapper .footer-button i {
+  padding-left: 10px;
+}
+.footer-button-wrapper .footer-button:hover {
+  cursor: pointer;
+  background: #ffffff;
+  color: #20113D;
+  transition-duration: 0.5s;
+}
+
+.footer-decoration {
+  margin: 0 auto;
+  width: 1400px;
+  height: 1px;
+  background: #ffffff;
+}
+
+.footer-authors {
+  padding-top: 35px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.authors-links {
+  padding-top: 10px;
+  display: flex;
+}
+.authors-links__item {
+  padding-right: 50px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #FFFFFF;
+  font-family: Montserrat;
+}
+
+.navigation-icons {
+  display: flex;
+  color: #FFFFFF;
+  font-size: 20px;
+}
+.navigation-icons .navigation-icons__item {
+  margin-left: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1440px) {
+  body {
+    width: 1920px;
+    margin: 0 auto;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
