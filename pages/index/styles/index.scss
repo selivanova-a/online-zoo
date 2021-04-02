@@ -1,8 +1,8 @@
-@import "../../styles/constants";
-@import "../../styles/mixins";
-@import "../../styles/wrappers";
+@import "../../components/constants";
+@import "../../components/mixins";
+@import "../../components/wrappers";
 
-@import "../../styles/header";
+@import "../../components/header";
 
 @import "promotion";
 @import "welcome";
@@ -13,4 +13,4 @@
 @import "feedback";
 @import "care-animals";
 
-@import "../../styles/footer";
+@import "../../components/footer";
