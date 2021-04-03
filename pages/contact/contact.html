@@ -2,9 +2,146 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Title</title>
+	<title>Contact Us</title>
+	<link rel="stylesheet" type="text/css" href="contact.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/be2d7aec18.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
+<header class="header">
+	<div class="header__wrapper">
+		<div class="content-wrapper">
+			<div class="header-content">
+				<div class="logo">
+					<a href="#">
+						<img src="../../assets/icons/logo.svg">
+					</a>
+				</div>
+				<nav class="navigation">
+					<ul class="navigation-links">
+						<li class="navigation-links__item active">
+							<a href="../../index.html" >ABOUT</a>
+						</li>
+						<li class="navigation-links__item">
+							<a href="../../pages/map/map.html">MAP</a>
+						</li>
+						<li class="navigation-links__item">
+							<a href="../../pages/zoos/panda/panda.html">ZOOS</a>
+						</li>
+						<li class="navigation-links__item">
+							<a href="#" id="active">CONTACT US</a>
+						</li>
+						<li class="navigation-links__item">
+							<a
+									href="https://www.figma.com/file/lnK11foY8Aoa6oOlDXovVN/Online-ZOO-Project?node-id=0%3A1"
+									target="_blank">DESIGN</a>
+						</li>
+					</ul>
+					<div class="navigation-icons">
+						<div class="navigation-icons__item youtube">
+							<div><i class="fab fa-youtube"></i></div>
+						</div>
+						<div class="navigation-icons__item instagram ">
+							<i class="fab fa-instagram"></i>
+						</div>
+						<div class="navigation-icons__item facebook">
+							<i class="fab fa-facebook-f"></i>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</header>
+<main class="main">
+	<div class="content-wrapper">
+		<img class="contact-image" src="../../assets/images/touch-the-animal-2.jpg">
+		<div class="contact-form">
+			<div class="conact-form-description">
+				<h2 class="conact-form-description__title">Get in touch</h2>
+				<p class="conact-form-description__text">
+					Whether you have a question, or would like to say hello, we're happy to hear from you.
+					Please use the form to send us a message and we'll get back to you as soon as we can.
+					Whether you have a question, or would like to say hello, we're happy to hear from you.
+					Please use the form to send us a message and we'll get back to you as soon as we can.
+				</p>
+			</div>
+			<div class="contact-form-message">
+				<form id="survey-form" action="http://www.chooseyourmini.com/choice.php" method="post">
+					<p class="label"> <span class="blue">*</span> Your Name  </p>
+					<input  class="name" type="text" name="name" required placeholder="Enter your name">
+					<p class="label"><span class="blue">*</span> Your Email Address  </p>
+					<input  class="email" type="email" name="email" required placeholder="Enter your email">
+					<p class="label"><span class="blue">*</span> Subject  </p>
+					<input  class="subject" type="text" name="subject" required placeholder="Enter the subject">
+					<p class="label"><span class="blue">*</span> Message</p>
+					<textarea class="message" required placeholder="Enter the message"></textarea>
+					<input class="submit" type="submit" value="send message ">
+				</form>
+			</div>
+		</div>
+	</div>
+</main>
+<footer class="footer">
+	<div class="footer__wrapper">
+		<div class="content-wrapper">
+			<div class="footer-navigation">
+				<div class="footer-navigation__icons">
+					<a href="#" class="footer-navigation__icon" title="Online Zoo">
+						<img src="../../assets/icons/white-logo.svg" alt="logo online-zoo">
+					</a>
+					<a href="##" class="footer-navigation__icon" title="Yem Digital">
+						<img src="../../assets/icons/yem-digital-logo.svg" alt="logo yem-digital">
+					</a>
+					<a href="##" class="footer-navigation__icon" title="Rolling Scopes School">
+						<img src="../../assets/icons/rs_school_js-logo.svg">
+					</a>
+				</div>
+				<nav class="footer-navigation__links">
+					<ul class="footer-links">
+						<li class="footer-links__item">
+							<a href="../../../index.html">ABOUT</a>
+						</li>
+						<li class="footer-links__item">
+							<a href="../../../pages/map/map.html">MAP</a>
+						</li>
+						<li class="footer-links__item">
+							<a href="../../../pages/zoos/panda/panda.html">ZOOS</a>
+						</li>
+						<li class="footer-links__item">
+							<a href="../../../pages/contact/contact.html">CONTACT US</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="footer-button-wrapper">
+					<button class="footer-button">
+						DONATE FOR VOLUNTEERS
+						<i class="fas fa-arrow-right"></i>
+					</button>
+				</div>
+			</div>
+			<div class="footer-decoration"></div>
+			<div class="footer-authors">
+				<div class="authors-links">
+					<div class="authors-links__item">© 2021 DinaK</div>
+					<div class="authors-links__item">© Yem Digital</div>
+					<div class="authors-links__item">© RSSchool</div>
+				</div>
+				<div class="navigation-icons">
+					<div class="navigation-icons__item youtube">
+						<div><i class="fab fa-youtube"></i></div>
+					</div>
+					<div class="navigation-icons__item instagram ">
+						<i class="fab fa-instagram"></i>
+					</div>
+					<div class="navigation-icons__item facebook">
+						<i class="fab fa-facebook-f"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
 </body>
 </html>

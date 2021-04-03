@@ -39,3 +39,10 @@
   color:$donation-background-color;
   transition-duration:0.5s;
 }
+
+@mixin input {
+  font-family:$main-font-family;
+  border-radius: 5px;
+  font-size: 18px;
+  color: #969696;
+}
