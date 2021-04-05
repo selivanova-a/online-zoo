@@ -1,0 +1,34 @@
+@import "../../components/constants";
+@import "../../components/mixins";
+@import "../../components/wrappers";
+
+@import "../../components/header";
+@import "../../components/footer";
+
+.main {
+  width: 1920px;
+  margin: 0 auto;
+
+  &__title {
+    padding-top: 40px;
+    padding-bottom: 100px;
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+    color: $map-main-title-color;
+    font-family: $main-font-family;
+    font-weight: 600;
+    font-size: 54px;
+    text-transform: uppercase;
+  }
+
+  .map {
+
+    padding-bottom: 200px;
+    margin: 0 auto;
+    height: 912px;
+    width: 1406px;
+    background: url("../../../assets/icons/Slice_1.svg");
+    background-repeat: no-repeat;
+  }
+}

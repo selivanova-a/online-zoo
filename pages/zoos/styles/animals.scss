@@ -3,12 +3,13 @@
 @import "../../components/wrappers";
 
 @import "../../components/header";
-@import "../panda/styles/sidebar";
-@import "../panda/styles/liva-cam";
-@import "../panda/styles/video-slider";
-@import "../panda/styles/information";
+@import "../styles/sidebar";
+@import "../styles/liva-cam";
+@import "../styles/video-slider";
+@import "../styles/information";
 @import "../../index/styles/donation";
 @import "../../components/footer";
+
 
 .donation {
   margin-top:150px;
