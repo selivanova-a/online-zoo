@@ -1,3 +1,5 @@
+@import "constants";
+
 @mixin donation-button {
   all: unset;
   border: 1px solid $donation-background-color;
@@ -45,4 +47,24 @@
   border-radius: 5px;
   font-size: 18px;
   color: #969696;
+}
+
+@mixin laptop-l {
+  @media (max-width: $laptop-l-width) { @content; }
+}
+
+@mixin media-laptop {
+  @media (max-width: $content-width) { @content; }
+}
+
+@mixin media-tablet {
+  @media (max-width: $tablet-width) { @content; }
+}
+
+@mixin media-mobile {
+  @media (max-width: $mobile-big-width) { @content; }
+}
+
+@mixin media-mobile-small {
+  @media (max-width: $mobile-small-width) { @content; }
 }

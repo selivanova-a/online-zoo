@@ -2,6 +2,9 @@
   font-family: $main-font-family;
    width:1920px;
    margin: 0 auto;
+  @include laptop-l{
+    width:1200px;
+  }
 
   &__title {
 
@@ -16,6 +19,11 @@
     color: $main-title-font-color;
     font-weight: 600;
     font-size: 54px;
+    @include laptop-l{
+      justify-content:start;
+      padding-top:30px;
+      padding-bottom:30px;
+    }
   }
 
   &__button {
@@ -27,6 +35,10 @@
     font-weight: 600;
     font-size: 18px;
     color:$button-inner-text-color;
+    @include laptop-l{
+      margin-left:55px;
+      padding: 18px 35px;
+    }
 
     i {
       padding-left:10px;
@@ -39,5 +51,27 @@
 
   .span {
     width:400px;
+    @include laptop-l{
+      width:150px;
+    }
+  }
+}
+
+.panda-live-video {
+  width: 1085px;
+  margin:0 auto;
+
+  @include laptop-l{
+    padding-left:30px;
+  }
+  iframe {
+    width: 1400px;
+    height: 787px;
+
+    @include laptop-l{
+      margin:0 auto;
+      width: 1025px;
+      height: 760px;
+    }
   }
 }

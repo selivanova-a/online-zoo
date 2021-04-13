@@ -12,6 +12,12 @@ html, body {
   width: 1400px;
   margin: 0 auto;
 }
+@media (max-width: 1920px) {
+  .content-wrapper {
+    width: 1000px;
+    margin: 0 auto;
+  }
+}
 
 .header {
   background: #F58021;
@@ -22,10 +28,11 @@ html, body {
   margin: 0 auto;
   background: #F58021;
 }
-
-.content-wrapper {
-  width: 1400px;
-  margin: 0 auto;
+@media (max-width: 1920px) {
+  .header__wrapper {
+    width: 1200px;
+    margin: 0 auto;
+  }
 }
 
 .header-content {
@@ -49,6 +56,11 @@ html, body {
 .navigation .navigation-links__item {
   padding-right: 50px;
 }
+@media (max-width: 1920px) {
+  .navigation .navigation-links__item {
+    padding-right: 30px;
+  }
+}
 .navigation .navigation-links a {
   text-decoration: none;
   color: #000000;
@@ -59,6 +71,8 @@ html, body {
 }
 .navigation .navigation-icons {
   display: flex;
+  align-items: center;
+  justify-content: center;
   color: #FFFFFF;
   font-size: 20px;
 }
@@ -67,9 +81,11 @@ html, body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+}
+@media (max-width: 1920px) {
+  .navigation .navigation-icons__item {
+    margin-left: 30px;
+  }
 }
 
 .youtube {
@@ -108,6 +124,11 @@ html, body {
   top: 0px;
   float: left;
 }
+@media (max-width: 1920px) {
+  .sidebar {
+    width: 115px;
+  }
+}
 .sidebar .live-button {
   text-transform: uppercase;
   display: flex;
@@ -119,6 +140,11 @@ html, body {
   color: #ffffff;
   font-family: Montserrat;
 }
+@media (max-width: 1920px) {
+  .sidebar .live-button {
+    display: none;
+  }
+}
 .sidebar .live-button__img {
   padding-left: 10px;
 }
@@ -126,10 +152,21 @@ html, body {
   padding-left: 170px;
   padding-bottom: 35px;
 }
+@media (max-width: 1920px) {
+  .sidebar .more-button {
+    padding-left: 50px;
+    padding-top: 35px;
+  }
+}
 .sidebar-decoration-line {
   width: 220px;
   height: 1px;
   background: #ffffff;
+}
+@media (max-width: 1920px) {
+  .sidebar-decoration-line {
+    width: 115px;
+  }
 }
 
 .sidebar-animal__active {
@@ -148,6 +185,11 @@ html, body {
   border-radius: 50%;
   border: 3px solid #ffffff;
   box-sizing: border-box;
+}
+@media (max-width: 1920px) {
+  .sidebar-animal__active .border-circle {
+    border: 3px solid #20113D;
+  }
 }
 .sidebar-animal__active .circle {
   display: flex;
@@ -187,6 +229,11 @@ html, body {
   width: 1920px;
   margin: 0 auto;
 }
+@media (max-width: 1920px) {
+  .live-cam {
+    width: 1200px;
+  }
+}
 .live-cam__title {
   display: flex;
   justify-content: space-between;
@@ -198,6 +245,13 @@ html, body {
   color: #00A092;
   font-weight: 600;
   font-size: 54px;
+}
+@media (max-width: 1920px) {
+  .live-cam__title {
+    justify-content: start;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 .live-cam__button {
   all: unset;
@@ -212,6 +266,12 @@ html, body {
   font-size: 18px;
   color: #ffffff;
 }
+@media (max-width: 1920px) {
+  .live-cam__button {
+    margin-left: 55px;
+    padding: 18px 35px;
+  }
+}
 .live-cam__button i {
   padding-left: 10px;
 }
@@ -222,6 +282,32 @@ html, body {
 }
 .live-cam .span {
   width: 400px;
+}
+@media (max-width: 1920px) {
+  .live-cam .span {
+    width: 150px;
+  }
+}
+
+.panda-live-video {
+  width: 1085px;
+  margin: 0 auto;
+}
+@media (max-width: 1920px) {
+  .panda-live-video {
+    padding-left: 30px;
+  }
+}
+.panda-live-video iframe {
+  width: 1400px;
+  height: 787px;
+}
+@media (max-width: 1920px) {
+  .panda-live-video iframe {
+    margin: 0 auto;
+    width: 1025px;
+    height: 760px;
+  }
 }
 
 .slider-title {
@@ -350,15 +436,32 @@ html, body {
   width: 1400px;
   margin: 0 auto;
 }
+@media (max-width: 1920px) {
+  .content-wrapper {
+    width: 1000px;
+    margin: 0 auto;
+  }
+}
 
 .donation {
   height: 221px;
   background: #20113D;
 }
+@media (max-width: 1920px) {
+  .donation {
+    height: 313px;
+  }
+}
 .donation__wrapper {
   width: 1920px;
   margin: 0 auto;
   background: #20113D;
+}
+@media (max-width: 1920px) {
+  .donation__wrapper {
+    width: 1200px;
+    margin: 0 auto;
+  }
 }
 
 .donation-amount {
@@ -369,6 +472,11 @@ html, body {
   align-items: center;
   justify-content: space-between;
   font-family: Montserrat;
+}
+@media (max-width: 1920px) {
+  .donation-amount {
+    height: 313px;
+  }
 }
 .donation-amount__description {
   color: #ffffff;
@@ -467,8 +575,21 @@ html, body {
 }
 .footer__wrapper {
   margin: 0 auto;
-  width: 1920px;
+  width: 1400px;
   background: #20113D;
+}
+@media (max-width: 1920px) {
+  .footer__wrapper {
+    width: 1201px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1920px) {
+  .content-wrapper {
+    width: 1000px;
+    margin: 0 auto;
+  }
 }
 
 .footer-navigation {
@@ -483,6 +604,11 @@ html, body {
 .footer-navigation__icons .footer-navigation__icon {
   padding-right: 65px;
 }
+@media (max-width: 1920px) {
+  .footer-navigation__icons .footer-navigation__icon {
+    padding-right: 30px;
+  }
+}
 
 .footer-links {
   display: flex;
@@ -494,6 +620,12 @@ html, body {
   list-style: none;
   font-weight: 600;
   font-size: 18px;
+}
+@media (max-width: 1920px) {
+  .footer-links__item {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 .footer-links__item a {
   font-family: Montserrat;
@@ -507,6 +639,11 @@ html, body {
 
 .footer-button-wrapper {
   padding-left: 70px;
+}
+@media (max-width: 1920px) {
+  .footer-button-wrapper {
+    padding-left: 25px;
+  }
 }
 .footer-button-wrapper .footer-button {
   font-family: Montserrat;
@@ -534,6 +671,12 @@ html, body {
   width: 1400px;
   height: 1px;
   background: #ffffff;
+}
+@media (max-width: 1920px) {
+  .footer-decoration {
+    margin: 0 auto;
+    width: 1200px;
+  }
 }
 
 .footer-authors {
@@ -569,12 +712,6 @@ html, body {
   justify-content: center;
 }
 
-@media screen and (max-width: 1440px) {
-  body {
-    width: 1920px;
-    margin: 0 auto;
-  }
-}
 .donation {
   margin-top: 150px;
   margin-bottom: 150px;
@@ -582,6 +719,11 @@ html, body {
 
 .donation-amount p {
   width: 870px;
+}
+@media (max-width: 1920px) {
+  .donation-amount p {
+    max-width: 750px;
+  }
 }
 
 /*# sourceMappingURL=animals.css.map */

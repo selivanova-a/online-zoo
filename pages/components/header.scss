@@ -1,7 +1,6 @@
 @import "constants";
 
 .header {
-  //height:110px;
   background:$header-background-color;;
 }
 
@@ -9,11 +8,10 @@
   width: 1920px;
   margin: 0 auto;
   background:#F58021;;
-}
-
-.content-wrapper {
-  width:1400px;
-  margin:0 auto;
+  @include laptop-l{
+    width: 1200px;
+    margin: 0 auto;
+  }
 }
 
 .header-content {
@@ -37,6 +35,9 @@
 
     &__item {
       padding-right:50px;
+      @include laptop-l{
+        padding-right:30px;
+      }
     }
 
     a {
@@ -53,6 +54,8 @@
 
   .navigation-icons {
     display: flex;
+    align-items:center;
+    justify-content:center;
     color:$header-links-color-hover;
     font-size:20px;
 
@@ -61,10 +64,9 @@
       width: 40px;
       height: 40px;
       border-radius:50%;
-
-      display:flex;
-      align-items:center;
-      justify-content:center;
+      @include laptop-l{
+        margin-left:30px;
+      }
     }
   }
 }
@@ -96,5 +98,3 @@
 #active {
     color: $header-active-link-color;
 }
-
-

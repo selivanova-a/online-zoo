@@ -8,6 +8,12 @@
   margin:0 auto;
   font-family:$main-font-family;
 
+  @include laptop-l{
+    padding-top:100px;
+    width: 1200px;
+    margin: 0 auto;
+  }
+
   &__description {
     margin:0 auto;
   }
@@ -17,6 +23,9 @@
     color: $main-title-font-color;
     font-weight: 600;
     font-size: 54px;
+    @include laptop-l{
+      padding-bottom:30px;
+    }
   }
 
   &__text {
@@ -25,6 +34,9 @@
     width: 920px;
     font-size: 26px;
     text-align:center;
+    @include laptop-l{
+      width: 830px;
+    }
   }
 }
 
@@ -38,6 +50,10 @@
   height: 74px;
   font-weight: 600;
   font-size: 18px;
+
+  @include laptop-l{
+    margin-top:40px;
+  }
 
   i {
     padding-left:10px;

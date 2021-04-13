@@ -20,4 +20,10 @@
   p {
     width:870px;
   }
+
+  @include laptop-l{
+    p {
+      max-width:750px;
+    }
+  }
 }

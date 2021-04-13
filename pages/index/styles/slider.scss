@@ -4,10 +4,15 @@
 .slider-wrapper {
   width: 1920px;
   margin: 0 auto;
+
+  @include laptop-l{
+    width: 1200px;
+    margin: 0 auto;
+  }
 }
 
+
 .slider__slides {
-  //display:flex;
   width:100%;
   overflow:hidden;
 }
@@ -19,6 +24,9 @@
   display:flex;
   justify-content:space-between;
   width:185px;
+  @include laptop-l{
+    padding-bottom:15px;
+  }
 
   button {
     @include donation-button();
@@ -32,14 +40,20 @@
 }
 
 .slider__item {
+  flex-shrink: 0;
   padding:25px;
   display: flex;
   width:100%;
   margin-left:250px;
 
+  @include laptop-l{
+    margin-left:0;
+    padding:12px;
+  }
 }
 
 .slider-image {
+  flex-shrink: 0;
   margin-right:40px;
   display: block;
   width: 440px;
@@ -50,6 +64,10 @@
   font-family:$main-font-family;
   color: $donation-inner-text;
   text-decoration:none;
+  @include laptop-l{
+    margin-right:25px;
+    height: 716px;
+  }
 
   &__title {
     display:flex;

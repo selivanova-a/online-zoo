@@ -3,6 +3,11 @@
 .welcome__wrapper {
   width:1920px;
   margin:0 auto;
+
+  @include laptop-l{
+    width: 1200px;
+    margin: 0 auto;
+  }
 }
 
 .welcome-zoo {
@@ -14,10 +19,26 @@
 
   font-family:$main-font-family;
 
+  @include laptop-l{
+    margin-top:100px;
+    margin-bottom:100px;
+    flex-direction:column;
+  }
+  img {
+    @include laptop-l{
+      width: 660px;
+      height: 438px;
+    }
+  }
   &__description {
     display:flex;
     flex-direction:column;
     align-self:center;
+    @include laptop-l{
+      margin-top:30px;
+      align-self:start;
+      justify-content:end;
+    }
 
     span {
       color: $main-title-font-color;
@@ -38,7 +59,26 @@
       font-weight: normal;
       font-size: 18px;
       line-height: 150%;
+      @include laptop-l{
+        margin-top:0;
+        padding-top:30px;
+      }
     }
+  }
+}
+
+.adaptive-revert {
+  @include laptop-l{
+    margin-top:100px;
+    margin-bottom:100px;
+    flex-direction:column-reverse;
+  }
+}
+
+.adaptive-padding {
+  @include laptop-l{
+    margin-top:-35px;
+    padding-left:340px;
   }
 }
 

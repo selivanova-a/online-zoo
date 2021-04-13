@@ -5,8 +5,20 @@
 
   &__wrapper {
     margin:0 auto;
-    width:1920px;
+    width:1400px;
     background:$donation-background-color;
+
+    @include laptop-l{
+      width: 1201px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.content-wrapper {
+  @include laptop-l{
+    width: 1000px;
+    margin: 0 auto;
   }
 }
 
@@ -21,6 +33,9 @@
 
   .footer-navigation__icon {
     padding-right:65px;
+    @include laptop-l{
+      padding-right: 30px;
+    }
   }
 }
 
@@ -35,6 +50,10 @@
 
     font-weight: 600;
     font-size: 18px;
+    @include laptop-l{
+      padding-left:10px;
+      padding-right:10px;
+    }
 
     a {
       font-family:$main-font-family;
@@ -51,6 +70,9 @@
 
 .footer-button-wrapper {
   padding-left:70px;
+  @include laptop-l{
+    padding-left:25px;
+  }
 
   .footer-button {
     @include feedback-button();
@@ -74,6 +96,11 @@
   width: 1400px;
   height: 1px;
   background:$main-background;
+
+  @include laptop-l{
+    margin:0 auto;
+    width:1200px;
+  }
 }
 
 .footer-authors {
@@ -114,9 +141,3 @@
   }
 }
 
-@media screen and (max-width: 1440px) {
-  body {
-    width: 1920px;
-    margin: 0 auto;
-  }
-}

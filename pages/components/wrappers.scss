@@ -11,4 +11,8 @@ html, body {
 .content-wrapper {
   width:1400px;
   margin:0 auto;
+  @include laptop-l{
+    width: 1000px;
+    margin: 0 auto;
+  }
 }

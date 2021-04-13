@@ -4,9 +4,17 @@
   margin-top:136px;
   font-family:$main-font-family;
 
+  @include laptop-l{
+    margin-top:150px;
+  }
+
   &__wrapper {
     margin: 0 auto;
     width: 1920px;
+    @include laptop-l{
+      width: 1200px;
+      margin: 0 auto;
+    }
   }
 
   &__title {
@@ -17,6 +25,9 @@
     font-weight: 600;
     font-size: 54px;
     color: $main-title-font-color;
+    @include laptop-l{
+      padding-bottom:30px;
+    }
   }
 
   &__description {
@@ -27,18 +38,40 @@
     font-weight: 500;
     font-size: 26px;
     color: $donation-background-color;
+    @include laptop-l{
+      padding-bottom:10px;
+    }
   }
 }
 
 .feed-animals {
-  margin-top: 40px;
+  padding-top: 40px;
   display:flex;
+  width:1600px;
+  flex-wrap:wrap;
+  @include laptop-l{
+    width:1000px;
+    flex-wrap:wrap;
+  }
 
   &__image {
+    margin-top: 20px;
     margin-right: 40px;
+
+    width:920px;
+    height:658px;
+    background-image: url(../../../assets/images/care-koala.jpg);
+
+    @include laptop-l{
+      width:930px;
+      height:470px;
+      background-image: url(../../../assets/images/care-koala1200.png);
+    }
   }
 
   &__item {
+    margin-top:20px;
+    flex-shrink: 0;
     margin-right:40px;
     overflow:hidden;
     text-decoration:none;
@@ -122,7 +155,25 @@
   margin:0 auto;
 }
 
+.image-wrapper {
+  width: 1400px;
+  margin: 0 auto;
+  @include laptop-l{
+    width:1200px;
+    margin:0 auto;
+  }
+}
+
 .touch-the-animal-image {
+  width: 1400px;
+  height:658px;
   margin-top:150px;
   margin-bottom:150px;
+  background-image: url(../../../assets/images/touch-the-animal.jpg);
+
+  @include laptop-l{
+    width: 1200px;
+    height:668px;
+    background-image: url(../../../assets/images/Touch-animal1200.jpg);
+  }
 }

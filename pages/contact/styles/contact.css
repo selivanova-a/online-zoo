@@ -12,6 +12,12 @@ html, body {
   width: 1400px;
   margin: 0 auto;
 }
+@media (max-width: 1920px) {
+  .content-wrapper {
+    width: 1000px;
+    margin: 0 auto;
+  }
+}
 
 .header {
   background: #F58021;
@@ -22,10 +28,11 @@ html, body {
   margin: 0 auto;
   background: #F58021;
 }
-
-.content-wrapper {
-  width: 1400px;
-  margin: 0 auto;
+@media (max-width: 1920px) {
+  .header__wrapper {
+    width: 1200px;
+    margin: 0 auto;
+  }
 }
 
 .header-content {
@@ -49,6 +56,11 @@ html, body {
 .navigation .navigation-links__item {
   padding-right: 50px;
 }
+@media (max-width: 1920px) {
+  .navigation .navigation-links__item {
+    padding-right: 30px;
+  }
+}
 .navigation .navigation-links a {
   text-decoration: none;
   color: #000000;
@@ -59,6 +71,8 @@ html, body {
 }
 .navigation .navigation-icons {
   display: flex;
+  align-items: center;
+  justify-content: center;
   color: #FFFFFF;
   font-size: 20px;
 }
@@ -67,9 +81,11 @@ html, body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+}
+@media (max-width: 1920px) {
+  .navigation .navigation-icons__item {
+    margin-left: 30px;
+  }
 }
 
 .youtube {
@@ -104,9 +120,27 @@ html, body {
   margin: 0 auto;
   width: 1920px;
 }
+@media (max-width: 1920px) {
+  .main {
+    margin: 0 auto;
+    width: 1200px;
+  }
+}
 
 .contact-image {
+  margin: 0 auto;
   margin-bottom: 100px;
+  background: url("../../../assets/images/touch-the-animal-2.jpg");
+  width: 1400px;
+  height: 815px;
+}
+@media (max-width: 1920px) {
+  .contact-image {
+    background: url("../../../assets/images/Touch the animal1200.jpg");
+    width: 1200px;
+    height: 815px;
+    margin-bottom: 50px;
+  }
 }
 
 .contact-form {
@@ -114,26 +148,49 @@ html, body {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 1920px) {
+  .contact-form {
+    flex-direction: column;
+  }
+}
 
 .conact-form-description {
   font-family: Montserrat;
 }
 .conact-form-description__title {
+  text-align: center;
   margin-bottom: 40px;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 54px;
   color: #00A092;
 }
+@media (max-width: 1920px) {
+  .conact-form-description__title {
+    margin-bottom: 30px;
+  }
+}
 .conact-form-description__text {
   max-width: 540px;
   font-size: 18px;
+}
+@media (max-width: 1920px) {
+  .conact-form-description__text {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 860px;
+  }
 }
 
 .contact-form-message {
   display: flex;
   flex-direction: column;
   font-family: Montserrat;
+}
+@media (max-width: 1920px) {
+  .contact-form-message {
+    margin: 0 auto;
+  }
 }
 .contact-form-message .blue {
   color: #00A092;
@@ -152,6 +209,11 @@ html, body {
   height: 60px;
   width: 660px;
 }
+@media (max-width: 1920px) {
+  .contact-form-message input {
+    width: 740px;
+  }
+}
 .contact-form-message .message {
   font-family: Montserrat;
   border-radius: 5px;
@@ -160,6 +222,11 @@ html, body {
   width: 640px;
   height: 160px;
   padding: 20px;
+}
+@media (max-width: 1920px) {
+  .contact-form-message .message {
+    width: 720px;
+  }
 }
 .contact-form-message .submit {
   margin-top: 67px;
@@ -184,8 +251,21 @@ html, body {
 }
 .footer__wrapper {
   margin: 0 auto;
-  width: 1920px;
+  width: 1400px;
   background: #20113D;
+}
+@media (max-width: 1920px) {
+  .footer__wrapper {
+    width: 1201px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1920px) {
+  .content-wrapper {
+    width: 1000px;
+    margin: 0 auto;
+  }
 }
 
 .footer-navigation {
@@ -200,6 +280,11 @@ html, body {
 .footer-navigation__icons .footer-navigation__icon {
   padding-right: 65px;
 }
+@media (max-width: 1920px) {
+  .footer-navigation__icons .footer-navigation__icon {
+    padding-right: 30px;
+  }
+}
 
 .footer-links {
   display: flex;
@@ -211,6 +296,12 @@ html, body {
   list-style: none;
   font-weight: 600;
   font-size: 18px;
+}
+@media (max-width: 1920px) {
+  .footer-links__item {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 .footer-links__item a {
   font-family: Montserrat;
@@ -224,6 +315,11 @@ html, body {
 
 .footer-button-wrapper {
   padding-left: 70px;
+}
+@media (max-width: 1920px) {
+  .footer-button-wrapper {
+    padding-left: 25px;
+  }
 }
 .footer-button-wrapper .footer-button {
   font-family: Montserrat;
@@ -251,6 +347,12 @@ html, body {
   width: 1400px;
   height: 1px;
   background: #ffffff;
+}
+@media (max-width: 1920px) {
+  .footer-decoration {
+    margin: 0 auto;
+    width: 1200px;
+  }
 }
 
 .footer-authors {
@@ -284,13 +386,6 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-@media screen and (max-width: 1440px) {
-  body {
-    width: 1920px;
-    margin: 0 auto;
-  }
 }
 
 /*# sourceMappingURL=contact.css.map */

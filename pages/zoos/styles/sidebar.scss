@@ -5,6 +5,10 @@
   position:sticky;
   top: 0px;
   float:left;
+  @include laptop-l{
+    width: 115px;
+
+  }
 
   .live-button {
     text-transform: uppercase;
@@ -16,6 +20,9 @@
     background: $button-color;
     color:$donation-inner-text;
     font-family:$main-font-family;
+    @include laptop-l{
+     display:none;
+    }
 
     &__img {
       padding-left:10px;
@@ -25,12 +32,21 @@
   .more-button {
     padding-left:170px;
     padding-bottom:35px;
+
+    @include laptop-l{
+      padding-left:50px;
+      padding-top:35px;
+    }
   }
 
   &-decoration-line {
     width: 220px;
     height: 1px;
     background:$main-background;
+
+    @include laptop-l{
+      width:115px;
+    }
   }
 }
 
@@ -52,6 +68,9 @@
     border-radius:50%;
     border: 3px solid $main-background;
     box-sizing: border-box;
+    @include laptop-l{
+      border: 3px solid $donation-background-color;
+    }
   }
 
   .circle {

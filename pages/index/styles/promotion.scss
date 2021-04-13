@@ -10,6 +10,12 @@
   width:1845px;
   height:831px;
   background-image: url(../../../assets/images/panda-background.jpg);
+
+  @include laptop-l{
+    width:1201px;
+    height:695px;
+    background-image: url(../../../assets/images/Background.jpg);
+  }
 }
 
 .promotion-article {
@@ -30,9 +36,15 @@
     max-width: 430px;
     font-size: 18px;
     color:$main-description-font-color;
+
+    @include laptop-l{
+      margin-top:30px;
+      padding-bottom:30px;
+    }
   }
 
   &__button {
+
     @include basic-button();
     padding: 26px 40px;
 
