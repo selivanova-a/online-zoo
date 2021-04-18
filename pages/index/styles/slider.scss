@@ -9,6 +9,11 @@
     width: 1200px;
     margin: 0 auto;
   }
+
+  @include media-laptop {
+    width:640px;
+    margin:0 auto;
+  }
 }
 
 
@@ -69,6 +74,11 @@
     height: 716px;
   }
 
+  @include media-laptop {
+    width: 290px;
+    height: 650px;
+  }
+
   &__title {
     display:flex;
     align-items:center;
@@ -87,6 +97,9 @@
       padding-bottom:30px;
       font-weight: 500;
       font-size: 26px;
+      @include media-laptop {
+        padding-bottom:20px;
+      }
     }
 
     &-text {
@@ -95,6 +108,9 @@
       font-weight: normal;
       font-size: 18px;
       margin:0 auto;
+      @include media-laptop {
+        padding-bottom:30px;
+      }
     }
 
     &-button {

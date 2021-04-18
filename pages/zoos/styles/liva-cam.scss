@@ -5,6 +5,9 @@
   @include laptop-l{
     width:1200px;
   }
+  @include media-laptop {
+    width:640px;
+  }
 
   &__title {
 
@@ -39,6 +42,9 @@
       margin-left:55px;
       padding: 18px 35px;
     }
+    @include media-laptop {
+      display:none;
+    }
 
     i {
       padding-left:10px;
@@ -54,6 +60,9 @@
     @include laptop-l{
       width:150px;
     }
+    @include media-laptop {
+      display:none;
+    }
   }
 }
 
@@ -64,6 +73,10 @@
   @include laptop-l{
     padding-left:30px;
   }
+  @include media-laptop {
+    width:640px;
+    padding-left:0;
+  }
   iframe {
     width: 1400px;
     height: 787px;
@@ -72,6 +85,12 @@
       margin:0 auto;
       width: 1025px;
       height: 760px;
+    }
+
+    @include media-laptop {
+      margin:0 auto;
+      width: 542px;
+      height: 402px;
     }
   }
 }

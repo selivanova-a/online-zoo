@@ -8,6 +8,11 @@
     width: 1200px;
     margin: 0 auto;
   }
+
+  @include media-laptop {
+    width: 640px;
+    margin:0 auto;
+  }
 }
 
 .welcome-zoo {
@@ -24,9 +29,25 @@
     margin-bottom:100px;
     flex-direction:column;
   }
+  @include media-laptop{
+    width:640px;
+  }
+
+  .content-wrapper {
+    @include media-laptop {
+      width: 640px;
+      margin:0 auto;
+    }
+  }
+
   img {
     @include laptop-l{
       width: 660px;
+      height: 438px;
+    }
+
+    @include media-laptop {
+      width: 640px;
       height: 438px;
     }
   }
@@ -79,6 +100,9 @@
   @include laptop-l{
     margin-top:-35px;
     padding-left:340px;
+  }
+  @include media-laptop{
+    padding-left:0;
   }
 }
 

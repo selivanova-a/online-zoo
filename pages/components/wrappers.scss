@@ -15,4 +15,8 @@ html, body {
     width: 1000px;
     margin: 0 auto;
   }
+  @include media-laptop {
+    width: 640px;
+    margin: 0 auto;
+  }
 }

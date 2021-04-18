@@ -19,11 +19,17 @@
 .donation-amount {
   p {
     width:870px;
+    @include media-laptop {
+      max-width:600px;
+    }
   }
 
   @include laptop-l{
     p {
       max-width:750px;
+      @include media-laptop {
+        max-width:600px;
+      }
     }
   }
 }

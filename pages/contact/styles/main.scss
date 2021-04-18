@@ -6,6 +6,10 @@
     margin: 0 auto;
     width: 1200px;
   }
+  @include media-laptop {
+    margin: 0 auto;
+    width: 640px;
+  }
 }
 
 .contact-image {
@@ -19,6 +23,12 @@
     background:url("../../../assets/images/Touch the animal1200.jpg");
     width: 1200px;
     height: 815px;
+    margin-bottom:50px;
+  }
+  @include media-laptop {
+    background:url("../../../assets/images/Touch the animal 640.jpg");
+    width: 640px;
+    height: 434px;
     margin-bottom:50px;
   }
 }
@@ -85,6 +95,9 @@
     @include laptop-l{
       width:740px;
     }
+    @include media-laptop {
+      width:600px;
+    }
   }
 
   .message {
@@ -94,6 +107,9 @@
     padding:20px;
     @include laptop-l{
       width:720px;
+    }
+    @include media-laptop {
+      width:580px;
     }
   }
 

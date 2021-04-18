@@ -4,8 +4,24 @@
   margin-top:136px;
   font-family:$main-font-family;
 
+  .content-wrapper {
+    width:1400px;
+    margin:0 auto;
+    @include laptop-l{
+      width: 1000px;
+      margin: 0 auto;
+    }
+    @include media-laptop {
+      width: 640px;
+      margin: 0 auto;
+    }
+  }
+
   @include laptop-l{
     margin-top:150px;
+  }
+  @include media-laptop {
+    margin-top:80px;
   }
 
   &__wrapper {
@@ -14,6 +30,10 @@
     @include laptop-l{
       width: 1200px;
       margin: 0 auto;
+    }
+    @include media-laptop {
+      width: 640px;
+      margin:0 auto;
     }
   }
 
@@ -27,6 +47,9 @@
     color: $main-title-font-color;
     @include laptop-l{
       padding-bottom:30px;
+    }
+    @include media-laptop {
+      max-width:600px;
     }
   }
 
@@ -53,6 +76,12 @@
     width:1000px;
     flex-wrap:wrap;
   }
+  @include media-laptop {
+    max-width:640px;
+    display:flex;
+    overflow:hidden;
+    flex-wrap:nowrap;
+  }
 
   &__image {
     margin-top: 20px;
@@ -66,6 +95,10 @@
       width:930px;
       height:470px;
       background-image: url(../../../assets/images/care-koala1200.png);
+    }
+
+    @include media-laptop {
+      display:none;
     }
   }
 
@@ -162,6 +195,10 @@
     width:1200px;
     margin:0 auto;
   }
+  @include media-laptop {
+    width: 640px;
+    margin:0 auto;
+  }
 }
 
 .touch-the-animal-image {
@@ -175,5 +212,10 @@
     width: 1200px;
     height:668px;
     background-image: url(../../../assets/images/Touch-animal1200.jpg);
+  }
+  @include media-laptop {
+    width: 640px;
+    height: 379px;
+    background-image: url(../../../assets/images/Touch-animal640.png);
   }
 }

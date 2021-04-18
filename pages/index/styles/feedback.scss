@@ -7,10 +7,14 @@
     width: 1920px;
     margin: 0 auto;
     background:$donation-background-color;
-
     @include laptop-l{
       width: 1200px;
       margin: 0 auto;
+    }
+    @include media-laptop {
+      width: 640px;
+      margin:0 auto;
+      overflow:hidden;
     }
   }
 
@@ -25,6 +29,12 @@
       width: 1201px;
       height: 1880px;
       background-image: url(../../../assets/images/gradient1200.png);
+    }
+
+    @include media-laptop {
+      margin:0 auto;
+      height:998px;
+      background-image: url(../../../assets/images/Gradient640px.jpg);
     }
   }
 }
@@ -70,12 +80,17 @@
   @include laptop-l{
     padding-top:50px;
   }
+  @include media-laptop {
+    padding-left:0;
+  }
 }
 
 .feedback-slider__slides {
-  //display:flex;
   width:100%;
   overflow:hidden;
+  @include media-laptop {
+    display:flex;
+  }
 }
 
 .feedback-slider__item {
@@ -97,6 +112,9 @@
     background:$main-background;
     @include laptop-l{
       margin-left:100px;
+    }
+    @include media-laptop {
+      margin-left: 20px;
     }
 
     &__title {

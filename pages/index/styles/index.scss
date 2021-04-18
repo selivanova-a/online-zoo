@@ -14,3 +14,16 @@
 @import "care-animals";
 
 @import "../../components/footer";
+
+.content-wrapper {
+  width:1400px;
+  margin:0 auto;
+  @include laptop-l{
+    width: 1000px;
+    margin: 0 auto;
+  }
+  @include media-laptop {
+    width: 640px;
+    margin: 0 auto;
+  }
+}

@@ -7,7 +7,10 @@
   float:left;
   @include laptop-l{
     width: 115px;
-
+  }
+  @include media-laptop {
+    position:initial;
+    width:78px;
   }
 
   .live-button {
@@ -22,6 +25,10 @@
     font-family:$main-font-family;
     @include laptop-l{
      display:none;
+    }
+    @include media-laptop {
+      position:initial;
+      width:78px;
     }
 
     &__img {
@@ -110,4 +117,5 @@
   color: $main-background;
   text-align:center;
 }
+
 

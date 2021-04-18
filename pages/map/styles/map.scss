@@ -11,6 +11,9 @@
   @include laptop-l{
     width:1200px;
   }
+  @include media-laptop {
+    width: 640px;
+  }
 
   &__title {
     padding-top: 40px;
@@ -23,6 +26,10 @@
     font-weight: 600;
     font-size: 54px;
     text-transform: uppercase;
+    @include media-laptop {
+      font-weight: 500;
+      font-size: 42px;
+    }
   }
 
   .map {
@@ -38,6 +45,14 @@
       width: 1198px;
       height: 777px;
       background: url("../../../assets/icons/Map1200.svg");
+      background-repeat: no-repeat;
+    }
+    @include media-laptop {
+      padding-bottom: 100px;
+      margin: 0 auto;
+      width: 639px;
+      height: 415px;
+      background: url("../../../assets/icons/Map640.svg");
       background-repeat: no-repeat;
     }
   }

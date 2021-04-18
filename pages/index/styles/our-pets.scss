@@ -14,6 +14,11 @@
     margin: 0 auto;
   }
 
+  @include media-laptop {
+    width: 640px;
+    margin:0 auto;
+  }
+
   &__description {
     margin:0 auto;
   }
@@ -26,6 +31,10 @@
     @include laptop-l{
       padding-bottom:30px;
     }
+    @include media-laptop {
+      max-width:400px;
+      margin:0 auto;
+    }
   }
 
   &__text {
@@ -36,6 +45,10 @@
     text-align:center;
     @include laptop-l{
       width: 830px;
+    }
+    @include media-laptop {
+      max-width:600px;
+      margin:0 auto;
     }
   }
 }

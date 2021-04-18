@@ -5,6 +5,10 @@
   box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   font-family:$main-font-family;
+  @include media-laptop {
+    width: 600px;
+    height: 506px;
+  }
 
   &__title {
     padding-top:50px;
@@ -29,15 +33,27 @@
 .animal-card {
   margin-top: 150px;
   display:flex;
+  @include media-laptop {
+    flex-direction:column-reverse;
+    margin-top:80px;
+  }
 
   &__img {
     padding-left: 200px;
+    @include media-laptop {
+      padding-left:0;
+      margin:0 auto;
+    }
   }
 }
 
 .animal-info {
   list-style:none;
   font-family:$main-font-family;
+  @include media-laptop {
+    padding-top:80px;
+    padding-left:20px;
+  }
 
   .bold {
     font-weight: 500;
@@ -70,4 +86,8 @@
   font-family:$main-font-family;
   max-width: 1160px;
   font-size: 18px;
+  @include media-laptop {
+    max-width:600px;
+    padding-left:20px;
+  }
 }

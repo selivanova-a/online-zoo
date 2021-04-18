@@ -1,7 +1,18 @@
-@import "constants";
 
 .header {
   background:$header-background-color;;
+  .content-wrapper {
+    width:1400px;
+    margin:0 auto;
+    @include laptop-l{
+      width: 1000px;
+      margin: 0 auto;
+    }
+    @include media-laptop {
+      width: 640px;
+      margin: 0 auto;
+    }
+  }
 }
 
 .header__wrapper {
@@ -12,6 +23,10 @@
     width: 1200px;
     margin: 0 auto;
   }
+  @include media-laptop {
+    width: 640px;
+    margin: 0 auto;
+  }
 }
 
 .header-content {
@@ -19,11 +34,23 @@
   display:flex;
   align-items:center;
   justify-content:space-between;
+  @include media-laptop {
+    width: 600px;
+  }
+}
+
+.logo {
+  @include media-laptop {
+    padding-left:20px;
+  }
 }
 
 .navigation {
   display:flex;
   align-items:center;
+  @include media-laptop {
+    display:none;
+  }
 
   .navigation-links {
     font-family: $main-font-family;
@@ -33,10 +60,14 @@
     display: flex;
     list-style: none;
 
+
     &__item {
       padding-right:50px;
       @include laptop-l{
         padding-right:30px;
+      }
+      @include media-laptop {
+        display:none;
       }
     }
 
@@ -59,15 +90,18 @@
     color:$header-links-color-hover;
     font-size:20px;
 
+
+
     &__item {
       margin-left:50px;
       width: 40px;
       height: 40px;
       border-radius:50%;
-      @include laptop-l{
-        margin-left:30px;
-      }
+
     }
+  }
+  @include media-laptop {
+    display:none;
   }
 }
 
@@ -97,4 +131,17 @@
 
 #active {
     color: $header-active-link-color;
+}
+
+.burger-menu-button {
+  display:none;
+  &__line {
+    width:30px;
+    height:3px;
+    margin-bottom:11px;
+    background:black;
+  }
+  @include media-laptop {
+    display:block;
+  }
 }
