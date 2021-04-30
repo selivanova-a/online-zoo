@@ -7,7 +7,9 @@
 	<link rel="stylesheet" type="text/css" href="pages/index/styles/index.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="./assets/icons/favicon.svg" type="image/png">
 	<script src="https://kit.fontawesome.com/be2d7aec18.js" crossorigin="anonymous"></script>
+	<script defer src="pages/index/index.js"></script>
 </head>
 <body>
 	<header class="header">
@@ -125,9 +127,9 @@
 					<div class="donation-amount__input">
 						<span>Quick Donate</span>
 						<div class="donation-amount__form">
-							<input type="number" step="1" min="1" max="9999" id="num_count" placeholder="$ DONATION AMOUNT"
+							<input type="number" step="1" min="1" max="3" id="num_count" placeholder="$ DONATION AMOUNT"
 								   class="input-text qty text" size="4" />
-							<button>
+							<button class="donation-amount__button">
 								<i class="fas fa-arrow-right"></i>
 							</button>
 						</div>
@@ -543,5 +545,171 @@
 				</div>
 		</div>
 	</footer>
+	<div class="popup">
+		<div class="popup-content">
+			<div class="popup-content_wrapper">
+				<div class="close-button">
+					<i class="fas fa-times"></i>
+				</div>
+			</div>
+			<h2 class="popup-content_title">together we care, save and protect!</h2>
+			<p class="popup-content_description">Your most generous gift not only cares for countless animals,
+				but it also offers hope and a vital lifeline to the world’s most endangered wildlife relying
+				on us to survive.</p>
+			<div class="donation-buttons">
+				<button class="donation-buttons__item">$20</button>
+				<button class="donation-buttons__item">$30</button>
+				<button class="donation-buttons__item">$50</button>
+				<button class="donation-buttons__item">$80</button>
+				<button class="donation-buttons__item">$100</button>
+				<button class="donation-buttons__item">Other amount</button>
+			</div>
+		</div>
+		<div class="donation-step donation-step-1 donation-hidden">
+			<div class="donation-wrapper">
+				<h3 class="donation-wrapper__title">make your donation</h3>
+			</div>
+			<div class="donation-content-wrapper">
+				<div class="donation-info">
+					<div class="donation-info__title">Donation Information:</div>
+				</div>
+			</div>
+			<div class="donation-info__decoration-line"></div>
+			<div class="donation-content-wrapper">
+				<p class="label"> <span class="blue">*</span>Choose your donation amount:</p>
+				<div class="step-1-buttons">
+					<button class="step-1-buttons__item">$20</button>
+					<button class="step-1-buttons__item">$30</button>
+					<button class="step-1-buttons__item">$50</button>
+					<button class="step-1-buttons__item">$80</button>
+					<button class="step-1-buttons__item">$100</button>
+				</div>
+				<div class="amount">
+					<button class="amount__button">Other amount</button>
+					<input  class="amount-input" type="text">
+				</div>
+				<div class="special-pet">
+					<button class="special-pet__button">for special pet</button>
+					<select id="animals">
+						<option>Lukas the Panda</option>
+						<option>Andy the Lemur</option>
+						<option>Glen the Gorilla</option>
+						<option>Sam & Lora the eagles family</option>
+					</select>
+				</div>
+				<div class="checkbox">
+					<input type="checkbox" checked><label>Make this a monthly recurring gift</label>
+				</div>
+				<div class="next">
+					<div class="next-circles">
+						<div class="next-circles__item active-item"></div>
+						<div class="next-circles__item"></div>
+						<div class="next-circles__item"></div>
+					</div>
+					<button class="next-button">
+						Next
+						<i class="fas fa-arrow-right"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="donation-step donation-step-2 donation-hidden">
+			<div class="donation-wrapper">
+				<h3 class="donation-wrapper__title">make your donation</h3>
+			</div>
+			<div class="donation-content-wrapper">
+				<div class="donation-info">
+					<div class="donation-info__title">Billing Information:</div>
+				</div>
+			</div>
+			<div class="donation-info__decoration-line"></div>
+			<div class="donation-content-wrapper">
+				<div class="billing">
+					<p class="label"> <span class="blue">*</span> Your Name  </p>
+					<input  class="name" type="text" name="name" required placeholder="Enter your name">
+					<p class="label"><span class="blue">*</span> Your Email Address  </p>
+					<input  class="email" type="email" name="email" required placeholder="Enter your email">
+				</div>
+				<p class="next-description">You will receive emails from the Online Zoo, including updates and news on the latest
+					discoveries and translations. You can unsubscribe at any time.</p>
+				<div class="next">
+					<div class="next-circles">
+						<div class="next-circles__item active-item"></div>
+						<div class="next-circles__item active-item"></div>
+						<div class="next-circles__item"></div>
+					</div>
+					<div class="back-button">Back</div>
+					<button class="next-button second-two-button">
+						Next
+						<i class="fas fa-arrow-right"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="donation-step donation-step-3 donation-hidden">
+			<div class="donation-wrapper">
+				<h3 class="donation-wrapper__title">make your donation</h3>
+			</div>
+			<div class="donation-content-wrapper">
+				<div class="donation-info">
+					<div class="donation-info__title">Payment Information:</div>
+				</div>
+			</div>
+			<div class="donation-info__decoration-line"></div>
+			<div class="donation-content-wrapper">
+				<div class="credit-card">
+					<div class="credit-card__number">
+						<p class="label"> <span class="blue">*</span> Credit Card Number  </p>
+						<input  class="card-number" id="card-number" type="text" name="card">
+					</div>
+					<div class="credit-card__cvv">
+						<p class="label"> <span class="blue">*</span> CVV Number  </p>
+						<input  class="card-cvv" id="card-cvv" type="text" name="card">
+					</div>
+				</div>
+				<p class="label date-label"> <span class="blue">*</span> Expiration Date  </p>
+				<div class="date">
+					<div class="date__month">
+						<select id="month">
+							<option>01</option>
+							<option>02</option>
+							<option>03</option>
+							<option>04</option>
+							<option>05</option>
+							<option>06</option>
+							<option>07</option>
+							<option>08</option>
+							<option>09</option>
+							<option>10</option>
+							<option>11</option>
+							<option>12</option>
+						</select>
+					</div>
+					<div class="date__year">
+						<select id="year">
+							<option>21</option>
+							<option>22</option>
+							<option>23</option>
+							<option>24</option>
+							<option>25</option>
+							<option>26</option>
+						</select>
+					</div>
+				</div>
+				<div class="next">
+					<div class="next-circles">
+						<div class="next-circles__item active-item"></div>
+						<div class="next-circles__item active-item"></div>
+						<div class="next-circles__item active-item"></div>
+					</div>
+					<div class="back-button second-back-button">Back</div>
+					<button class="next-button second-two-button" >
+						Next
+						<i class="fas fa-arrow-right"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>

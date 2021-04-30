@@ -1,0 +1,265 @@
+.donation-step {
+  width: 920px;
+  height: 750px;
+  background:white;
+
+  .donation-wrapper {
+    width: 920px;
+    height: 135px;
+    background: #F58021;
+
+    &__title {
+      padding-top:42px;
+      font-family:$main-font-family;
+      font-weight: 500;
+      font-size: 42px;
+      text-align: center;
+      text-transform: uppercase;
+      color: $donation-inner-text;
+    }
+  }
+}
+
+.donation-content-wrapper {
+  width:680px;
+  margin:0 auto;
+  display:flex;
+  flex-direction:column;
+}
+
+.donation-info {
+  &__title {
+    padding-top:35px;
+    font-family:$main-font-family;
+    color: $main-description-font-color;
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  &__decoration-line {
+    margin-top:10px;
+    width: 919px;
+    height: 1px;
+    background:#A4A8AE;
+  }
+}
+
+.donation-hidden {
+  display: none;
+}
+
+.label {
+  padding-top:20px;
+  padding-bottom:10px;
+  font-weight: normal;
+  font-size: 18px;
+  color: $main-description-font-color;
+  font-family:$main-font-family;
+
+  .blue {
+    color:$main-title-font-color;
+    padding-right:5px;
+  }
+}
+
+.step-1-buttons {
+  &__item {
+    all: unset;
+    background: rgba(0, 160, 146, 0.5);
+    padding: 26px 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #FFFFFF;
+    font-family:$main-font-family;
+    margin-right:33px;
+  }
+}
+
+.amount {
+  padding-top:40px;
+  input {
+    margin-left:40px;
+    width: 200px;
+    height: 65px;
+    border-radius: 5px;
+  }
+
+  &__button {
+    all: unset;
+    padding: 22px 45px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFFFFF;
+    font-family:$main-font-family;
+    text-transform: uppercase;
+    background: $popup-button-color;
+
+    &:hover {
+      background: $popup-button-hover-color;
+    }
+  }
+}
+
+.special-pet {
+  padding-top:40px;
+
+  &__button {
+    all: unset;
+    background: rgba(0, 160, 146, 0.5);
+    padding: 22px 45px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #FFFFFF;
+    font-family:$main-font-family;
+    margin-right:33px;
+    text-transform: uppercase;
+
+    &:hover {
+      background: $popup-button-hover-color;
+    }
+  }
+
+  select {
+    width: 300px;
+    height: 65px;
+    border-radius:5px;
+  }
+}
+
+.checkbox {
+  margin-top:40px;
+  display:flex;
+  align-items:center;
+  font-size: 18px;
+  color: $main-description-font-color;
+  font-family:$main-font-family;
+  input {
+    margin-right:30px;
+    width:30px;
+    height:30px;
+  }
+}
+
+.next {
+  margin-top:30px;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+
+  .next-circles {
+    display:flex;
+
+    &__item {
+      margin-right:10px;
+      width: 10px;
+      height: 10px;
+      background: #FFFFFF;
+      border: 1px solid #00A092;
+      border-radius:50%;
+    }
+
+    .active-item {
+      background:$popup-button-hover-color;
+    }
+  }
+
+  .back-button {
+    text-decoration:underline;
+    font-weight: 600;
+    font-size: 18px;
+    font-family:$main-font-family;
+    color: $popup-button-color;
+
+    &:hover {
+      cursor:pointer;
+      text-decoration:none;
+      color:$popup-button-hover-color;
+    }
+  }
+
+  .next-button {
+    all: unset;
+    background: $popup-button-color;
+    padding: 22px 45px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #FFFFFF;
+    font-family:$main-font-family;
+    margin-right:33px;
+    text-transform: uppercase;
+
+    &:hover {
+      background: $popup-button-hover-color;
+    }
+  }
+}
+
+.next-description {
+  margin-top:20px;
+  font-family:$main-font-family;
+  font-size: 18px;
+  color: $main-description-font-color;
+}
+
+.billing {
+  margin-top:40px;
+  input {
+    @include input();
+    padding-left:20px;
+    height:60px;
+    width:640px;
+
+  }
+
+  .message {
+    @include input();
+    width: 640px;
+    height: 160px;
+    padding:20px;
+
+  }
+}
+
+.credit-card {
+  display:flex;
+  justify-content:space-between;
+
+  &__number {
+    input {
+      width: 442px;
+      height: 65px;
+      border-radius: 5px;
+    }
+  }
+
+  &__cvv {
+    input {
+      width: 198px;
+      height: 65px;
+      border-radius: 5px;
+    }
+  }
+}
+
+.date-label {
+  margin-top:50px;
+}
+
+.date {
+  display:flex;
+
+  select {
+    margin-right:40px;
+    width: 201px;
+    height: 65px;
+    border-radius: 5px;
+  }
+
+  &__month {
+    margin-right:40px;
+  }
+
+}

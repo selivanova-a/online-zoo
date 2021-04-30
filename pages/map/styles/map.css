@@ -12,13 +12,13 @@ html, body {
   width: 1400px;
   margin: 0 auto;
 }
-@media (max-width: 1920px) {
+@media (max-width: 1919px) {
   .content-wrapper {
     width: 1000px;
     margin: 0 auto;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .content-wrapper {
     width: 640px;
     margin: 0 auto;
@@ -32,13 +32,13 @@ html, body {
   width: 1400px;
   margin: 0 auto;
 }
-@media (max-width: 1920px) {
+@media (max-width: 1919px) {
   .header .content-wrapper {
     width: 1000px;
     margin: 0 auto;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .header .content-wrapper {
     width: 640px;
     margin: 0 auto;
@@ -50,13 +50,13 @@ html, body {
   margin: 0 auto;
   background: #F58021;
 }
-@media (max-width: 1920px) {
+@media (max-width: 1919px) {
   .header__wrapper {
     width: 1200px;
     margin: 0 auto;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .header__wrapper {
     width: 640px;
     margin: 0 auto;
@@ -69,13 +69,13 @@ html, body {
   align-items: center;
   justify-content: space-between;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .header-content {
     width: 600px;
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .logo {
     padding-left: 20px;
   }
@@ -85,7 +85,7 @@ html, body {
   display: flex;
   align-items: center;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .navigation {
     display: none;
   }
@@ -100,12 +100,12 @@ html, body {
 .navigation .navigation-links__item {
   padding-right: 50px;
 }
-@media (max-width: 1920px) {
+@media (max-width: 1919px) {
   .navigation .navigation-links__item {
     padding-right: 30px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .navigation .navigation-links__item {
     display: none;
   }
@@ -131,7 +131,7 @@ html, body {
   height: 40px;
   border-radius: 50%;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .navigation {
     display: none;
   }
@@ -174,7 +174,7 @@ html, body {
   margin-bottom: 11px;
   background: black;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .burger-menu-button {
     display: block;
   }
@@ -185,7 +185,7 @@ html, body {
   height: 330px;
   background: #20113D;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .footer {
     height: 545px;
   }
@@ -195,13 +195,13 @@ html, body {
   width: 1400px;
   background: #20113D;
 }
-@media (max-width: 1920px) {
+@media (max-width: 1919px) {
   .footer__wrapper {
     width: 1201px;
     margin: 0 auto;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .footer__wrapper {
     width: 640px;
     margin: 0 auto;
@@ -214,7 +214,7 @@ html, body {
   align-items: center;
   height: 210px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .footer-navigation {
     flex-direction: column;
   }
@@ -223,7 +223,7 @@ html, body {
 .footer-navigation__icons {
   display: flex;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .footer-navigation__icons {
     padding-top: 50px;
   }
@@ -231,7 +231,7 @@ html, body {
 .footer-navigation__icons .footer-navigation__icon {
   padding-right: 65px;
 }
-@media (max-width: 1920px) {
+@media (max-width: 1919px) {
   .footer-navigation__icons .footer-navigation__icon {
     padding-right: 30px;
   }
@@ -248,13 +248,13 @@ html, body {
   font-weight: 600;
   font-size: 18px;
 }
-@media (max-width: 1920px) {
+@media (max-width: 1919px) {
   .footer-links__item {
     padding-left: 10px;
     padding-right: 10px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .footer-links__item {
     padding-top: 50px;
     margin: 0 auto;
@@ -273,12 +273,12 @@ html, body {
 .footer-button-wrapper {
   padding-left: 70px;
 }
-@media (max-width: 1920px) {
+@media (max-width: 1919px) {
   .footer-button-wrapper {
     padding-left: 25px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .footer-button-wrapper {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -311,13 +311,13 @@ html, body {
   height: 1px;
   background: #ffffff;
 }
-@media (max-width: 1920px) {
+@media (max-width: 1919px) {
   .footer-decoration {
     margin: 0 auto;
     width: 1200px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .footer-decoration {
     margin: 0 auto;
     width: 640px;
@@ -329,12 +329,12 @@ html, body {
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .footer-authors {
     flex-direction: column;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .footer-authors {
     padding-top: 130px;
   }
@@ -344,7 +344,7 @@ html, body {
   padding-top: 10px;
   display: flex;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .authors-links {
     padding-top: 30px;
     justify-content: center;
@@ -358,7 +358,7 @@ html, body {
   color: #FFFFFF;
   font-family: Montserrat;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .authors-links__item {
     padding-left: 24px;
     padding-right: 24px;
@@ -370,7 +370,7 @@ html, body {
   color: #FFFFFF;
   font-size: 20px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .navigation-icons .adaptive {
     margin: 0 auto;
   }
@@ -385,7 +385,7 @@ html, body {
   justify-content: center;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .adaptive {
     margin: 0 auto;
   }
@@ -395,12 +395,12 @@ html, body {
   width: 1920px;
   margin: 0 auto;
 }
-@media (max-width: 1920px) {
+@media (max-width: 1919px) {
   .main {
     width: 1200px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .main {
     width: 640px;
   }
@@ -417,7 +417,7 @@ html, body {
   font-size: 54px;
   text-transform: uppercase;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .main__title {
     font-weight: 500;
     font-size: 42px;
@@ -431,7 +431,7 @@ html, body {
   background: url("../../../assets/icons/Slice_1.svg");
   background-repeat: no-repeat;
 }
-@media (max-width: 1920px) {
+@media (max-width: 1919px) {
   .main .map {
     padding-bottom: 100px;
     margin: 0 auto;
@@ -441,7 +441,7 @@ html, body {
     background-repeat: no-repeat;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .main .map {
     padding-bottom: 100px;
     margin: 0 auto;
