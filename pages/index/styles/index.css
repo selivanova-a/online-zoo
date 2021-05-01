@@ -754,6 +754,11 @@ html, body {
   transition-duration: 0.5s;
 }
 
+.slider-item {
+  transition-property: transform;
+  transition-duration: 400ms;
+}
+
 .slider__item-elem {
   flex-shrink: 0;
   padding: 25px;
