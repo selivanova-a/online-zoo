@@ -725,6 +725,7 @@ html, body {
 .slider__slides {
   width: 100%;
   overflow: hidden;
+  display: flex;
 }
 
 .buttons {
@@ -753,7 +754,7 @@ html, body {
   transition-duration: 0.5s;
 }
 
-.slider__item {
+.slider__item-elem {
   flex-shrink: 0;
   padding: 25px;
   display: flex;
@@ -761,7 +762,7 @@ html, body {
   margin-left: 250px;
 }
 @media (max-width: 1919px) {
-  .slider__item {
+  .slider__item-elem {
     margin-left: 0;
     padding: 12px;
   }

@@ -196,3 +196,38 @@ function backPopupTwo() {
 	donationPopupStep2.classList.remove('donation-hidden');
 }
 
+
+//SLIIIIIIIIIIIIIIIIIIIIIIIDEEEEEEEEEEEEEEEEEEEEEEEER
+const buttonLeft = document.querySelector('.slider__button_left');
+const buttonRight = document.querySelector('.slider__button_right');
+
+let slideOne = document.querySelector('.slider__item_1');
+let slideTwo = document.querySelector('.slider__item_2');
+
+
+let slides = [slideOne, slideTwo];
+let currentPosition = 0;
+const sizeImagePx = 100;
+const sliderPosition = -(slides.length - 1) *  sizeImagePx;
+
+
+function setPosition (position) {
+	if (position > 0) {
+		return false;
+	}
+	if (position < sliderPosition) {
+		return false;
+	}
+	currentPosition = position;
+	slides.forEach(slide => slide.style.transform = `translateX( ${position}%)`);
+	return currentPosition;
+}
+
+buttonRight.onclick = () => {
+	setPosition(currentPosition - sizeImagePx);
+};
+
+buttonLeft.onclick = () => {
+	setPosition(currentPosition + sizeImagePx);
+};
+
