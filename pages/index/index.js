@@ -18,10 +18,55 @@ const donationPopupStep3 = document.querySelector('.donation-step-3');
 
 const buttonDonationAmount = document.querySelector('.donation-amount__button');
 
+const validAmount = document.querySelector('.amount-input');
+const validSpecialPet = document.querySelector('#animals');
+const validName = document.querySelector('.name');
+const validEmail = document.querySelector('.email');
+const validCardNumber = document.querySelector('.card-number');
+const validCardCVV = document.querySelector('.card-cvv');
+const validMonth = document.querySelector('#month');
+const validYear = document.querySelector('#year');
+const buttonSubmit = document.querySelector('.submit-button');
+
 buttonDonate.addEventListener('click', openPopup);
 buttonDonateVolunteers.addEventListener('click', openPopup);
 
 buttonClose.addEventListener('click', closePopup);
+
+
+//VALIDATION ALL INPUTS FOR SUBMIT BUTTON
+
+function validationSubmit() {
+	alert('Thank you for your donation!!!');
+}
+
+validAmount.addEventListener('input', validate);
+validSpecialPet.addEventListener('input', validate);
+validName.addEventListener('input', validate);
+validEmail.addEventListener('input', validate);
+validCardNumber.addEventListener('input', validate);
+validCardCVV.addEventListener('input', validate);
+validMonth.addEventListener('input', validate);
+validYear.addEventListener('input', validate);
+
+function validate() {
+	if (
+		validAmount.validity.valid &&
+		validSpecialPet.validity.valid &&
+		validName.validity.valid &&
+		validEmail.validity.valid &&
+		validCardNumber.validity.valid &&
+		validCardCVV.validity.valid &&
+		validMonth.validity.valid &&
+		validYear.validity.valid
+	) {
+		buttonSubmit.classList.remove('invalid');
+		buttonSubmit.addEventListener('click', validationSubmit);
+	} else {
+		buttonSubmit.classList.add('invalid');
+	}
+}
+
 
 
 //OPEN POPUP FOR DONATE AMOUNT///////////////////////////////////////////////////////////////////
@@ -63,6 +108,14 @@ cardCvvInput.addEventListener('input', maxValueOfCardCVV);
 function maxValueOfCardCVV () {
 	if (this.value > 3 || typeof this.value != "number") {
 		this.value = this.value.slice(0, 3);
+	}
+};
+
+validAmount.addEventListener('input', maxValueAmount);
+
+function maxValueAmount () {
+	if (this.value > 4 || typeof this.value != "number") {
+		this.value = this.value.slice(0, 4);
 	}
 };
 

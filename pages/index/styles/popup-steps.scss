@@ -263,3 +263,28 @@
   }
 
 }
+
+
+.submit-button {
+  @include basic-button;
+  padding: 26px 45px;
+  color: $button-inner-text-color;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+  font-family:$main-font-family;
+
+
+  &:hover {
+    @include basic-button-hover;
+  }
+}
+
+.invalid {
+  background: rgba(255, 134, 34, 0.59);
+  &:hover {
+    cursor:none;
+    background: rgba(255, 134, 34, 0.59);
+  }
+}
+

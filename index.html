@@ -565,6 +565,7 @@
 				<button class="donation-buttons__item">Other amount</button>
 			</div>
 		</div>
+		<form id="survey-form">
 		<div class="donation-step donation-step-1 donation-hidden">
 			<div class="donation-wrapper">
 				<h3 class="donation-wrapper__title">make your donation</h3>
@@ -586,11 +587,11 @@
 				</div>
 				<div class="amount">
 					<button class="amount__button">Other amount</button>
-					<input  class="amount-input" type="text">
+					<input  class="amount-input" type="text" required>
 				</div>
 				<div class="special-pet">
 					<button class="special-pet__button">for special pet</button>
-					<select id="animals">
+					<select id="animals" required>
 						<option>Lukas the Panda</option>
 						<option>Andy the Lemur</option>
 						<option>Glen the Gorilla</option>
@@ -598,7 +599,7 @@
 					</select>
 				</div>
 				<div class="checkbox">
-					<input type="checkbox" checked><label>Make this a monthly recurring gift</label>
+					<input type="checkbox" required checked><label>Make this a monthly recurring gift</label>
 				</div>
 				<div class="next">
 					<div class="next-circles">
@@ -660,17 +661,17 @@
 				<div class="credit-card">
 					<div class="credit-card__number">
 						<p class="label"> <span class="blue">*</span> Credit Card Number  </p>
-						<input  class="card-number" id="card-number" type="text" name="card">
+						<input  class="card-number" id="card-number" type="text" name="card" required>
 					</div>
 					<div class="credit-card__cvv">
 						<p class="label"> <span class="blue">*</span> CVV Number  </p>
-						<input  class="card-cvv" id="card-cvv" type="text" name="card">
+						<input  class="card-cvv" id="card-cvv" type="text" name="card" required>
 					</div>
 				</div>
 				<p class="label date-label"> <span class="blue">*</span> Expiration Date  </p>
 				<div class="date">
 					<div class="date__month">
-						<select id="month">
+						<select id="month" required>
 							<option>01</option>
 							<option>02</option>
 							<option>03</option>
@@ -686,7 +687,7 @@
 						</select>
 					</div>
 					<div class="date__year">
-						<select id="year">
+						<select id="year" required>
 							<option>21</option>
 							<option>22</option>
 							<option>23</option>
@@ -703,13 +704,14 @@
 						<div class="next-circles__item active-item"></div>
 					</div>
 					<div class="back-button second-back-button">Back</div>
-					<button class="next-button second-two-button" >
-						Next
+					<button class="submit-button second-two-button invalid" >
+						complete donation
 						<i class="fas fa-arrow-right"></i>
 					</button>
 				</div>
 			</div>
 		</div>
+		</form>
 	</div>
 </body>
 </html>
