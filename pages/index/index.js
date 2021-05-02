@@ -90,7 +90,7 @@ function maxValueOfDonate () {
 	}
 };
 
-//MAX 16 and 3 SIMBOLS FOR CREDIT CARD//////////////////////////////////////////////////////////////////
+//MAX SIMBOLS FOR CREDIT CARD//////////////////////////////////////////////////////////////////
 const cardNumberInput = document.querySelector('#card-number');
 cardNumberInput.addEventListener('input', maxValueOfCardNumber);
 
@@ -121,9 +121,20 @@ function maxValueAmount () {
 
 
 //SEND INPUT VALUE TO OUTPUT //////////////////////////////////////////////////////////////////
-/*const donationOutput = document.querySelector('.amount-input');
-/!*const donationOutputInner =  donationOutput.value;*!/
-donationOutput.value = donationInputInner;*/
+let donationAmountInput = document.querySelector('#num_count');
+let donationAmountOutput = document.querySelector('#amount-input');
+const startDonationItem = document.querySelector('#start-donate-item');
+
+
+buttonDonationAmount.addEventListener('click', () => {
+	let inputNum = donationAmountInput.value;
+	donationAmountOutput.value = inputNum;
+
+	if (inputNum === '') {
+		startDonationItem.classList.add('active-donation-item');
+	}
+});
+
 
 
 
@@ -148,6 +159,7 @@ function closePopup() {
 	donationPopupStep1.classList.add('donation-hidden');
 	donationPopupStep2.classList.add('donation-hidden');
 	donationPopupStep3.classList.add('donation-hidden');
+	startDonationItem.classList.remove('active-donation-item');
 }
 
 

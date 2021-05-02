@@ -1872,6 +1872,10 @@ html, body {
   background: rgba(255, 134, 34, 0.59);
 }
 
+.active-donation-item {
+  background: #00A092;
+}
+
 .footer {
   width: 100%;
   height: 330px;
