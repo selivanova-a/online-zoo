@@ -75,6 +75,7 @@
 }
 
 .feedback-slider {
+  width:1165px;
   padding-top:100px;
   padding-left:30px;
   @include laptop-l{
@@ -86,6 +87,7 @@
 }
 
 .feedback-slider__slides {
+  display:flex;
   width:100%;
   overflow:hidden;
   @include media-laptop {
@@ -94,6 +96,12 @@
 }
 
 .feedback-slider__item {
+  transition-property: transform;
+  transition-duration:600ms;
+}
+
+
+.feedback-slider__item-elem {
   margin-bottom:30px;
   display: flex;
   width:100%;

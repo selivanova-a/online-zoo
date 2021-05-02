@@ -91,7 +91,6 @@ function maxValueOfDonate () {
 };
 
 //MAX 16 and 3 SIMBOLS FOR CREDIT CARD//////////////////////////////////////////////////////////////////
-//for 16
 const cardNumberInput = document.querySelector('#card-number');
 cardNumberInput.addEventListener('input', maxValueOfCardNumber);
 
@@ -101,7 +100,7 @@ function maxValueOfCardNumber () {
 	}
 };
 
-//for 3
+
 const cardCvvInput = document.querySelector('#card-cvv');
 cardCvvInput.addEventListener('input', maxValueOfCardCVV);
 
@@ -110,6 +109,7 @@ function maxValueOfCardCVV () {
 		this.value = this.value.slice(0, 3);
 	}
 };
+
 
 validAmount.addEventListener('input', maxValueAmount);
 
@@ -197,7 +197,7 @@ function backPopupTwo() {
 }
 
 
-//SLIIIIIIIIIIIIIIIIIIIIIIIDEEEEEEEEEEEEEEEEEEEEEEEER
+//SLIDER FOR 'MEET SOME OUR PETS'
 const buttonLeft = document.querySelector('.slider__button_left');
 const buttonRight = document.querySelector('.slider__button_right');
 
@@ -230,4 +230,72 @@ buttonRight.onclick = () => {
 buttonLeft.onclick = () => {
 	setPosition(currentPosition + sizeImagePx);
 };
+
+
+//AUTO-SLIDER FOR FEEDBACKS///////////////////////////////////////////////////////////////////////////////////////////////////
+const feedbackSlider = document.querySelector('.feedback-slider__slides');
+const feedbackButtonLeft = document.querySelector('.feedback-slider__button_left');
+const feedbackButtonRight = document.querySelector('.feedback-slider__button_right');
+
+let feedbackSlideOne = document.querySelector('.feedback_slider_item_1');
+let feedbackSlideTwo = document.querySelector('.feedback_slider_item_2');
+
+
+let feedbackslides = [feedbackSlideOne, feedbackSlideTwo];
+let feedbackcurrentPosition = 0;
+const feedbacksizeImagePx = 100;
+const feedbacksliderPosition = -(slides.length - 1) *  sizeImagePx;
+
+
+function feedbackSetPosition (position) {
+	if (position > 0) {
+		return false;
+	}
+	if (position < feedbacksliderPosition) {
+		return false;
+	}
+	feedbackcurrentPosition = position;
+	feedbackslides.forEach(slide => slide.style.transform = `translateX( ${position}%)`);
+	return feedbackcurrentPosition;
+}
+
+function plusSlide() {
+	feedbackSetPosition(feedbackcurrentPosition - feedbacksizeImagePx);
+}
+
+function minusSlide() {
+	feedbackSetPosition(feedbackcurrentPosition + feedbacksizeImagePx);
+}
+
+feedbackButtonRight.addEventListener('click', () => {
+	plusSlide();
+	delayAutoSlide();
+});
+feedbackButtonLeft.addEventListener('click', () => {
+	minusSlide();
+	delayAutoSlide();
+});
+
+let autoSlideInterval15 = setInterval(plusSlide, 15000);
+let autoSlideInterval30 = setInterval(minusSlide, 30000);
+let autoSlideTimeOut = null;
+
+function delayAutoSlide() {
+	clearTimeout(autoSlideTimeOut);//////////
+	clearInterval(autoSlideInterval15);
+	clearInterval(autoSlideInterval30);
+	autoSlideInterval15 = null;
+	autoSlideInterval30 = null;//
+	autoSlideTimeOut = setTimeout(() => {
+		clearInterval(autoSlideInterval15);///////////
+		clearInterval(autoSlideInterval30);//////////////
+		autoSlideInterval15 = setInterval(plusSlide, 15000);
+		autoSlideInterval30 = setInterval(minusSlide, 30000);
+	}, 45000);
+
+}
+
+
+feedbackSlider.addEventListener('click', delayAutoSlide);
+
 
