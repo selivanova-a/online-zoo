@@ -5,6 +5,7 @@
   position:sticky;
   top: 0px;
   float:left;
+  z-index:1;
   @include laptop-l{
     width: 115px;
   }
@@ -117,5 +118,127 @@
   color: $main-background;
   text-align:center;
 }
+
+///////////////////////////////////////////////////////////////////////////////////
+.popup {
+  position: absolute;
+  left:0;
+  top:0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.8s ease 0s;
+  z-index:100;
+}
+
+.hidden {
+  opacity:0;
+}
+
+.active {
+  opacity: 1;
+  pointer-events: auto;
+  .popup-content {
+    transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+  }
+}
+
+
+.sidebar-hidden {
+  display:none;
+}
+
+
+.popup-content {
+  margin-top:110px;
+  width: 245px;
+  height: 846px;
+  background: #20113D;
+  position: relative;
+  transition: all 0.8s ease 0s;
+}
+
+.navigation-buttons {
+  &__live {
+    text-transform: uppercase;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width: 120px;
+    height: 38px;
+    background: $button-color;
+    color:$donation-inner-text;
+    font-family:$main-font-family;
+  }
+
+  &__close {
+    padding-left:170px;
+    padding-bottom:35px;
+  }
+}
+
+.popup-decoration-line {
+  width: 245px;
+  height: 1px;
+  background:$main-background;
+}
+
+.popup-animal-card {
+  margin-top:50px;
+  margin-bottom: 50px;
+  display:flex;
+  justify-content:center;
+  &__image {
+    margin-right:15px;
+  }
+
+  &__description {
+    max-width: 162px;
+    font-family:$main-font-family;
+    color: $donation-inner-text;
+  }
+}
+
+//SLIDER
+
+.arrow-down-button {
+  padding-top:50px;
+  color: $main-background;
+  text-align:center;
+}
+
+.popup-slider-slides {
+  height:100%;
+  overflow:hidden;
+}
+
+.stop-video-1 {
+  width:320px;
+  height:190px;
+  position: relative;
+  z-index:10;
+  margin-top: -190px
+}
+
+.stop-video-2 {
+  width:320px;
+  height:190px;
+  position: relative;
+  z-index:10;
+  margin-top: -190px
+}
+
+.stop-video-3 {
+  width:320px;
+  height:190px;
+  position: relative;
+  z-index:10;
+  margin-top: -190px
+}
+
+
+
+
 
 

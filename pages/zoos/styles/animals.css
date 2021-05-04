@@ -187,6 +187,7 @@ html, body {
   position: sticky;
   top: 0px;
   float: left;
+  z-index: 1;
 }
 @media (max-width: 1919px) {
   .sidebar {
@@ -298,6 +299,115 @@ html, body {
   padding-top: 20px;
   color: #ffffff;
   text-align: center;
+}
+
+.popup {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.8s ease 0s;
+  z-index: 100;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.active .popup-content {
+  transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+}
+
+.sidebar-hidden {
+  display: none;
+}
+
+.popup-content {
+  margin-top: 110px;
+  width: 245px;
+  height: 846px;
+  background: #20113D;
+  position: relative;
+  transition: all 0.8s ease 0s;
+}
+
+.navigation-buttons__live {
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 38px;
+  background: #F58021;
+  color: #ffffff;
+  font-family: Montserrat;
+}
+.navigation-buttons__close {
+  padding-left: 170px;
+  padding-bottom: 35px;
+}
+
+.popup-decoration-line {
+  width: 245px;
+  height: 1px;
+  background: #ffffff;
+}
+
+.popup-animal-card {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+.popup-animal-card__image {
+  margin-right: 15px;
+}
+.popup-animal-card__description {
+  max-width: 162px;
+  font-family: Montserrat;
+  color: #ffffff;
+}
+
+.arrow-down-button {
+  padding-top: 50px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.popup-slider-slides {
+  height: 100%;
+  overflow: hidden;
+}
+
+.stop-video-1 {
+  width: 320px;
+  height: 190px;
+  position: relative;
+  z-index: 10;
+  margin-top: -190px;
+}
+
+.stop-video-2 {
+  width: 320px;
+  height: 190px;
+  position: relative;
+  z-index: 10;
+  margin-top: -190px;
+}
+
+.stop-video-3 {
+  width: 320px;
+  height: 190px;
+  position: relative;
+  z-index: 10;
+  margin-top: -190px;
 }
 
 .live-cam {

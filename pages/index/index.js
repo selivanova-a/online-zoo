@@ -28,6 +28,8 @@ const validMonth = document.querySelector('#month');
 const validYear = document.querySelector('#year');
 const buttonSubmit = document.querySelector('.submit-button');
 
+const allDollarsButton = document.querySelectorAll('.step-1-buttons__item');
+
 buttonDonate.addEventListener('click', openPopup);
 buttonDonateVolunteers.addEventListener('click', openPopup);
 
@@ -137,7 +139,6 @@ buttonDonationAmount.addEventListener('click', () => {
 
 
 
-
 function openPopup() {
 	popupWrapper.classList.add('active');
 	document.body.classList.add('notScrollable');
@@ -159,7 +160,9 @@ function closePopup() {
 	donationPopupStep1.classList.add('donation-hidden');
 	donationPopupStep2.classList.add('donation-hidden');
 	donationPopupStep3.classList.add('donation-hidden');
-	startDonationItem.classList.remove('active-donation-item');
+	allDollarsButton.forEach((button) => {
+		button.classList.remove('active-donation-item');
+	})
 }
 
 
@@ -309,5 +312,46 @@ function delayAutoSlide() {
 
 
 feedbackSlider.addEventListener('click', delayAutoSlide);
+
+//DONATE TO POPUP
+const inputDollars10 = document.querySelector('.input-dollars-10');
+const inputDollars30 = document.querySelector('.input-dollars-30');
+const inputDollars50 = document.querySelector('.input-dollars-50');
+const inputDollars80 = document.querySelector('.input-dollars-80');
+const inputDollars100 = document.querySelector('.input-dollars-100');
+const inputOtherAmount = document.querySelector('.input-other-amount');
+
+const outputDollars10 = document.querySelector('.output-dollars-10');
+const outputDollars30 = document.querySelector('.output-dollars-30');
+const outputDollars50 = document.querySelector('.output-dollars-50');
+const outputDollars80 = document.querySelector('.output-dollars-80');
+const outputDollars100 = document.querySelector('.output-dollars-100');
+const outputOtherAmount = document.querySelector('.amount-input');
+
+inputDollars10.addEventListener('click', () => {
+	outputDollars10.classList.add('active-donation-item');
+});
+
+inputDollars30.addEventListener('click', () => {
+	outputDollars30.classList.add('active-donation-item');
+});
+
+inputDollars50.addEventListener('click', () => {
+	outputDollars50.classList.add('active-donation-item');
+});
+
+inputDollars80.addEventListener('click', () => {
+	outputDollars80.classList.add('active-donation-item');
+});
+
+inputDollars100.addEventListener('click', () => {
+	outputDollars100.classList.add('active-donation-item');
+});
+
+inputOtherAmount.addEventListener('click', () => {
+	outputOtherAmount.focus();
+	outputOtherAmount.value = '';
+});
+
 
 
