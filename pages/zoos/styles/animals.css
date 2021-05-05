@@ -363,6 +363,7 @@ html, body {
 .popup-animal-card {
   margin-top: 50px;
   margin-bottom: 50px;
+  margin-left: -60px;
   display: flex;
   justify-content: center;
 }
@@ -370,7 +371,7 @@ html, body {
   margin-right: 15px;
 }
 .popup-animal-card__description {
-  max-width: 162px;
+  width: 162px;
   font-family: Montserrat;
   color: #ffffff;
 }
@@ -408,6 +409,57 @@ html, body {
   position: relative;
   z-index: 10;
   margin-top: -190px;
+}
+
+.popup-slider {
+  display: flex;
+  width: 686px;
+  height: 300px;
+  margin-left: -210px;
+  margin-top: 200px;
+  align-items: center;
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+}
+.popup-slider .popup-slider__slides {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+.popup-slider .popup-slider__item {
+  width: 550px;
+  height: 300px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  transition-property: transform;
+  transition-duration: 400ms;
+}
+.popup-slider .popup-slider__button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  font-size: 45px;
+  color: white;
+}
+.popup-slider .popup-slider__button:hover {
+  color: #D26004;
+  font-size: 50px;
+}
+.popup-slider .popup-animal-card {
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+}
+
+#panda {
+  margin-right: -30px;
+  margin-left: 20px;
 }
 
 .live-cam {

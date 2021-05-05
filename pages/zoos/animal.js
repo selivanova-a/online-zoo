@@ -30,7 +30,9 @@ function closePopup() {
 
 
 //SLIDER  FOR POPUP ANIMALS///////////////////////////////////////(not work)
-const downButton = document.querySelector('.arrow-down-button');
+const slidesContainer = document.querySelector('.popup-slider__slides');
+const buttonLeft = document.querySelector('.popup-slider__button_left');
+const buttonRight = document.querySelector('.popup-slider__button_right');
 
 let slideOne = document.querySelector('.popup-slider__item_1');
 let slideTwo = document.querySelector('.popup-slider__item_2');
@@ -38,7 +40,7 @@ let slideTwo = document.querySelector('.popup-slider__item_2');
 
 let slides = [slideOne, slideTwo];
 let currentPosition = 0;
-const sizeImagePx = 100;
+const sizeImagePx = 110;
 const sliderPosition = -(slides.length - 1) *  sizeImagePx;
 
 
@@ -50,13 +52,18 @@ function setPosition (position) {
 		return false;
 	}
 	currentPosition = position;
-	slides.forEach(slide => slide.style.transform = `translateY( ${position}%)`);
+	slides.forEach(slide => slide.style.transform = `translateX( ${position}%)`);
 	return currentPosition;
 }
 
-downButton.onclick = () => {
+buttonRight.onclick = () => {
+	setPosition(currentPosition + sizeImagePx);
+};
+
+buttonLeft.onclick = () => {
 	setPosition(currentPosition - sizeImagePx);
 };
+
 
 
 //VIDEO CHANGE
