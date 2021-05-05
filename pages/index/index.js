@@ -71,7 +71,7 @@ function validate() {
 
 
 
-//OPEN POPUP FOR DONATE AMOUNT///////////////////////////////////////////////////////////////////
+//OPEN POPUP FOR DONATE AMOUNT
 buttonDonationAmount.addEventListener('click', donationAmount);
 
 function donationAmount() {
@@ -82,7 +82,7 @@ function donationAmount() {
 
 
 
-//MAX 4 SIMBOLS FOR DONATE AMOUNT//////////////////////////////////////////////////////////////////
+//MAX 4 SIMBOLS FOR DONATE AMOUNT
 const donationInput = document.querySelector('#num_count');
 donationInput.addEventListener('input', maxValueOfDonate);
 
@@ -92,7 +92,7 @@ function maxValueOfDonate () {
 	}
 };
 
-//MAX SIMBOLS FOR CREDIT CARD//////////////////////////////////////////////////////////////////
+//MAX SIMBOLS FOR CREDIT CARD
 const cardNumberInput = document.querySelector('#card-number');
 cardNumberInput.addEventListener('input', maxValueOfCardNumber);
 
@@ -122,7 +122,7 @@ function maxValueAmount () {
 };
 
 
-//SEND INPUT VALUE TO OUTPUT //////////////////////////////////////////////////////////////////
+//SEND INPUT VALUE TO OUTPUT
 let donationAmountInput = document.querySelector('#num_count');
 let donationAmountOutput = document.querySelector('#amount-input');
 const startDonationItem = document.querySelector('#start-donate-item');
@@ -134,6 +134,7 @@ buttonDonationAmount.addEventListener('click', () => {
 
 	if (inputNum === '') {
 		startDonationItem.classList.add('active-donation-item');
+		outputOtherAmount.value = '.';
 	}
 });
 
@@ -216,38 +217,61 @@ function backPopupTwo() {
 const buttonLeft = document.querySelector('.slider__button_left');
 const buttonRight = document.querySelector('.slider__button_right');
 
-let slideOne = document.querySelector('.slider__item_1');
-let slideTwo = document.querySelector('.slider__item_2');
+let sliderItems = document.querySelectorAll('.slider-item');
+let currentItem = 0;
+let isEnabled = true;
 
-
-let slides = [slideOne, slideTwo];
-let currentPosition = 0;
-const sizeImagePx = 100;
-const sliderPosition = -(slides.length - 1) *  sizeImagePx;
-
-
-function setPosition (position) {
-	if (position > 0) {
-		return false;
-	}
-	if (position < sliderPosition) {
-		return false;
-	}
-	currentPosition = position;
-	slides.forEach(slide => slide.style.transform = `translateX( ${position}%)`);
-	return currentPosition;
+function changeCurrentItem(n) {
+	currentItem = (n + sliderItems.length) % sliderItems.length;
 }
 
-buttonRight.onclick = () => {
-	setPosition(currentPosition - sizeImagePx);
-};
+function hideItem(direction) {
+	isEnabled = false;
+	sliderItems[currentItem].classList.add(direction);
+	sliderItems[currentItem].addEventListener('animationend', function() {
+		this.classList.remove('active', direction);
+	})
+}
 
-buttonLeft.onclick = () => {
-	setPosition(currentPosition + sizeImagePx);
-};
+function showItem(direction) {
+	sliderItems[currentItem].classList.add('next', direction);
+	sliderItems[currentItem].addEventListener('animationend', function() {
+		this.classList.remove('next', direction);
+		this.classList.add('active');
+		isEnabled = true;
+	})
+}
+
+buttonLeft.addEventListener('click', moveLeft);
+buttonRight.addEventListener('click', moveRight);
+
+function moveLeft() {
+	if (isEnabled) {
+		previousItem(currentItem);
+	}
+}
+
+function moveRight() {
+	if (isEnabled) {
+		nextItem(currentItem);
+	}
+}
+
+function previousItem(n) {
+	hideItem('to-right');
+	changeCurrentItem(n - 1);
+	showItem('from-left');
+}
+
+function nextItem(n) {
+	hideItem('to-left');
+	changeCurrentItem(n + 1);
+	showItem('from-right');
+}
 
 
-//AUTO-SLIDER FOR FEEDBACKS///////////////////////////////////////////////////////////////////////////////////////////////////
+
+//AUTO-SLIDER FOR FEEDBACKS
 const feedbackSlider = document.querySelector('.feedback-slider__slides');
 const feedbackButtonLeft = document.querySelector('.feedback-slider__button_left');
 const feedbackButtonRight = document.querySelector('.feedback-slider__button_right');
@@ -259,7 +283,7 @@ let feedbackSlideTwo = document.querySelector('.feedback_slider_item_2');
 let feedbackslides = [feedbackSlideOne, feedbackSlideTwo];
 let feedbackcurrentPosition = 0;
 const feedbacksizeImagePx = 100;
-const feedbacksliderPosition = -(slides.length - 1) *  sizeImagePx;
+const feedbacksliderPosition = -(2 - 1) *  100;
 
 
 function feedbackSetPosition (position) {
@@ -296,14 +320,14 @@ let autoSlideInterval30 = setInterval(minusSlide, 30000);
 let autoSlideTimeOut = null;
 
 function delayAutoSlide() {
-	clearTimeout(autoSlideTimeOut);//////////
+	clearTimeout(autoSlideTimeOut);
 	clearInterval(autoSlideInterval15);
 	clearInterval(autoSlideInterval30);
 	autoSlideInterval15 = null;
 	autoSlideInterval30 = null;//
 	autoSlideTimeOut = setTimeout(() => {
-		clearInterval(autoSlideInterval15);///////////
-		clearInterval(autoSlideInterval30);//////////////
+		clearInterval(autoSlideInterval15);
+		clearInterval(autoSlideInterval30);
 		autoSlideInterval15 = setInterval(plusSlide, 15000);
 		autoSlideInterval30 = setInterval(minusSlide, 30000);
 	}, 45000);
@@ -330,22 +354,27 @@ const outputOtherAmount = document.querySelector('.amount-input');
 
 inputDollars10.addEventListener('click', () => {
 	outputDollars10.classList.add('active-donation-item');
+	outputOtherAmount.value = '.';
 });
 
 inputDollars30.addEventListener('click', () => {
 	outputDollars30.classList.add('active-donation-item');
+	outputOtherAmount.value = '.';
 });
 
 inputDollars50.addEventListener('click', () => {
 	outputDollars50.classList.add('active-donation-item');
+	outputOtherAmount.value = '.';
 });
 
 inputDollars80.addEventListener('click', () => {
 	outputDollars80.classList.add('active-donation-item');
+	outputOtherAmount.value = '.';
 });
 
 inputDollars100.addEventListener('click', () => {
 	outputDollars100.classList.add('active-donation-item');
+	outputOtherAmount.value = '.';
 });
 
 inputOtherAmount.addEventListener('click', () => {

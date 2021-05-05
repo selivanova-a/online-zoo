@@ -29,7 +29,7 @@ function closePopup() {
 }
 
 
-//SLIDER  FOR POPUP ANIMALS///////////////////////////////////////(not work)
+//SLIDER  FOR POPUP ANIMALS
 const slidesContainer = document.querySelector('.popup-slider__slides');
 const buttonLeft = document.querySelector('.popup-slider__button_left');
 const buttonRight = document.querySelector('.popup-slider__button_right');

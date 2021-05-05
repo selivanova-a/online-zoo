@@ -21,6 +21,7 @@
   width:100%;
   overflow:hidden;
   display:flex;
+  position:relative;
 }
 
 
@@ -46,8 +47,19 @@
 }
 
 .slider-item {
-  transition-property: transform;
-  transition-duration:400ms;
+  animation: 0.1s ease-in-out;
+  display:none;
+  position:relative;
+}
+
+.active {
+  display:block;
+}
+
+.next {
+  display:block;
+  position:absolute;
+  width:100%;
 }
 
 .slider__item-elem {
@@ -158,4 +170,39 @@
 }
 
 
+.to-left {
+  animation-name: left;
+}
+
+.to-right {
+  animation-name: right;
+  animation-direction:reverse;
+}
+
+.from-left {
+  animation-name: left;
+  animation-direction:reverse;
+}
+
+.from-right {
+  animation-name: right;
+}
+
+@keyframes left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes right {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
 
